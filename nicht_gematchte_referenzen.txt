@@ -1,0 +1,3543 @@
+Nicht gematchte Referenzen
+==========================
+
+Zusammenfassung
+---------------
+Excelzeile mehrdeutig: mehrere Referenzen: 66
+Referenz_zu_Abfullnorm fehlt: 21
+Word-Datei nicht parsebar: 15
+kein passender Excel-Eintrag: 84
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-014-001_Abfuelluebersicht_K2000S_R12ex_H22_L1_Standard.doc
+Referenz: 800.014.001.R
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ex', '22', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-014-001_Abfuelluebersicht_K2000S_R12ex_H22_L1_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.014.001.R"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-014-002_Abfuelluebersicht_K2000S_R12ex_H22_L2_Standard.doc
+Referenz: 800.014.002.R
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ex', '22', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-014-002_Abfuelluebersicht_K2000S_R12ex_H22_L2_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.014.002.R"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-029-001_Abfuelluebersicht_K1000S_R12ze_H27_L1_Standard.doc
+Referenz: 800.029.001.H
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ze', '27', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-029-001_Abfuelluebersicht_K1000S_R12ze_H27_L1_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.029.001.H"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-029-002_Abfuelluebersicht_K1000S_R12ze_H27_L2_Standard.doc
+Referenz: 800.029.002.E
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ze', '27', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-029-002_Abfuelluebersicht_K1000S_R12ze_H27_L2_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.029.002.E"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-045-001_Abfuelluebersicht_K1000_R12ze_H27_L1_Standard.doc
+Referenz: 800.045.001.C
+Suchschluessel: [('1000', 'STANDARD', '12', 'ze', '27', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-045-001_Abfuelluebersicht_K1000_R12ze_H27_L1_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.045.001.C"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-045-002_Abfuelluebersicht_K1000_R12ze_H27_L2_Standard.doc
+Referenz: 800.045.002.A
+Suchschluessel: [('1000', 'STANDARD', '12', 'ze', '27', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-045-002_Abfuelluebersicht_K1000_R12ze_H27_L2_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.045.002.A"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-053-001_Abfuelluebersicht_K2000_SS05_R12ze_H18_L1_Standard.doc
+Referenz: 800.053.001.H
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ze', '18', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-053-001_Abfuelluebersicht_K2000_SS05_R12ze_H18_L1_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.053.001.H"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-053-002_Abfuelluebersicht_K2000_SS05_R12ze_H18_L2_Standard.doc
+Referenz: 800.053.002.D
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ze', '18', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-053-002_Abfuelluebersicht_K2000_SS05_R12ze_H18_L2_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.053.002.D"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-054-001_Abfuelluebersicht_K2000_SS05_R12ex_H22_L1_Standard.doc
+Referenz: 800.054.001.K
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ex', '22', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-054-001_Abfuelluebersicht_K2000_SS05_R12ex_H22_L1_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.054.001.K"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-054-002_Abfuelluebersicht_K2000_SS05_R12ex_H22_L2_Standard.doc
+Referenz: 800.054.002.F
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ex', '22', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-054-002_Abfuelluebersicht_K2000_SS05_R12ex_H22_L2_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.054.002.F"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-055-001_Abfuelluebersicht_K2000_SS05_R12ze_H27_L1_Standard.doc
+Referenz: 800.055.001.H
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ze', '27', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-055-001_Abfuelluebersicht_K2000_SS05_R12ze_H27_L1_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.055.001.H"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-055-002_Abfuelluebersicht_K2000_SS05_R12ze_H27_L2_Standard.doc
+Referenz: 800.055.002.D
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ze', '27', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-055-002_Abfuelluebersicht_K2000_SS05_R12ze_H27_L2_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.055.002.D"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-056-001_Abfuelluebersicht_K2000_SS05_R12ex_H29_L1_Standard.doc
+Referenz: 800.056.001.H
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ex', '29', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-056-001_Abfuelluebersicht_K2000_SS05_R12ex_H29_L1_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.056.001.H"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-056-002_Abfuelluebersicht_K2000_SS05_R12ex_H29_L2_Standard.doc
+Referenz: 800.056.002.D
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ex', '29', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-056-002_Abfuelluebersicht_K2000_SS05_R12ex_H29_L2_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.056.002.D"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-057-002_Abfuelluebersicht_K2000S_R12ze_H18_L2_Standard.doc
+Referenz: 800.057.002.M
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '18', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-057-002_Abfuelluebersicht_K2000S_R12ze_H18_L2_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.057.002.M"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-058-001_Abfuelluebersicht_K2000S_R12ze_H27_L1_Standard.doc
+Referenz: 800.058.001.J
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '27', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-058-001_Abfuelluebersicht_K2000S_R12ze_H27_L1_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.058.001.J"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-058-002_Abfuelluebersicht_K2000S_R12ze_H27_L2_Standard.doc
+Referenz: 800.058.002.J
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '27', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-058-002_Abfuelluebersicht_K2000S_R12ze_H27_L2_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.058.002.J"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-059-001_Abfuelluebersicht_K2000S_R12ex_H29_L1_Standard.doc
+Referenz: 800.059.001.J
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ex', '29', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-059-001_Abfuelluebersicht_K2000S_R12ex_H29_L1_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.059.001.J"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-059-002_Abfuelluebersicht_K2000S_R12ex_H29_L2_Standard.doc
+Referenz: 800.059.002.J
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ex', '29', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-059-002_Abfuelluebersicht_K2000S_R12ex_H29_L2_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.059.002.J"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-062-001_Abfuelluebersicht_K3000_R12ze_H27_L1_Standard.doc
+Referenz: 800.062.001.D
+Suchschluessel: [('3000', 'STANDARD', '12', 'ze', '27', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-062-001_Abfuelluebersicht_K3000_R12ze_H27_L1_Standard.doc",
+  "System": "3000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.062.001.D"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-062-002_Abfuelluebersicht_K3000_R12ze_H27_L2_Standard.doc
+Referenz: 800.062.002.B
+Suchschluessel: [('3000', 'STANDARD', '12', 'ze', '27', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-062-002_Abfuelluebersicht_K3000_R12ze_H27_L2_Standard.doc",
+  "System": "3000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.062.002.B"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-151-001_Abfuelluebersicht_K2000S_R12ex_H20_L1_28-021.doc
+Referenz: 800.151.001.F
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ex', '20', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-151-001_Abfuelluebersicht_K2000S_R12ex_H20_L1_28-021.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "28.021",
+  "Referenz_zu_Abfullnorm": "800.151.001.F"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-151-002_Abfuelluebersicht_K2000S_R12ex_H20_L2_28-021.doc
+Referenz: 800.151.002.F
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ex', '20', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-151-002_Abfuelluebersicht_K2000S_R12ex_H20_L2_28-021.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "28.021",
+  "Referenz_zu_Abfullnorm": "800.151.002.F"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-200-002_Abfuelluebersicht_K10S_R11_H17_L2_Anlagen.doc
+Referenz: 800.200.002.C
+Suchschluessel: [('10S', 'STANDARD', '11', 'ze', '17', '2'), ('10S', 'STANDARD', '11', 'ze', '18', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-200-002_Abfuelluebersicht_K10S_R11_H17_L2_Anlagen.doc",
+  "System": "10S",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Anlagen",
+  "Referenz_zu_Abfullnorm": "800.200.002.C"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-201-002_Abfuelluebersicht_K10S_R12_H22_L2_Anlagen.doc
+Referenz: 800.201.002.D
+Suchschluessel: [('10S', 'STANDARD', '12', 'ex', '22', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-201-002_Abfuelluebersicht_K10S_R12_H22_L2_Anlagen.doc",
+  "System": "10S",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Anlagen",
+  "Referenz_zu_Abfullnorm": "800.201.002.D"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-208-002_Abfuelluebersicht_K2000S_R12ze_H22_L2_Standard.doc
+Referenz: 800.208.002.J
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '22', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-208-002_Abfuelluebersicht_K2000S_R12ze_H22_L2_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.208.002.J"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-219-001_Abfuelluebersicht_K2000S_R11_H18_L1_28-019.doc
+Referenz: 800.219.001.G
+Suchschluessel: [('2000S', 'STANDARD', '11', 'ze', '18', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-219-001_Abfuelluebersicht_K2000S_R11_H18_L1_28-019.doc",
+  "System": "2000S",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "28.019",
+  "Referenz_zu_Abfullnorm": "800.219.001.G"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-219-002_Abfuelluebersicht_K2000S_R11_H18_L2_28-019.doc
+Referenz: 800.219.002.E
+Suchschluessel: [('2000S', 'STANDARD', '11', 'ze', '18', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-219-002_Abfuelluebersicht_K2000S_R11_H18_L2_28-019.doc",
+  "System": "2000S",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "28.019",
+  "Referenz_zu_Abfullnorm": "800.219.002.E"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-248-001_Abfuelluebersicht_K2000S_R12_H18-6_L1_Standard.doc
+Referenz: 800.248.001.E
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '18.6', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-248-001_Abfuelluebersicht_K2000S_R12_H18-6_L1_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12",
+  "Hulsen-diam": "18.6",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.248.001.E"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-248-002_Abfuelluebersicht_K2000S_R12_H18-6_L2_Standard.doc
+Referenz: 800.248.002.E
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '18.6', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-248-002_Abfuelluebersicht_K2000S_R12_H18-6_L2_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12",
+  "Hulsen-diam": "18.6",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.248.002.E"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-251-001_Abfuelluebersicht_K2000S_R12ze_H29_L1_Standard.doc
+Referenz: 800.251.001.F
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '29', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-251-001_Abfuelluebersicht_K2000S_R12ze_H29_L1_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.251.001.F"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-251-002_Abfuelluebersicht_K2000S_R12ze_H29_L2_Standard.doc
+Referenz: 800.251.002.F
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '29', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-251-002_Abfuelluebersicht_K2000S_R12ze_H29_L2_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.251.002.F"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-252-001_Abfuelluebersicht_K2000_SS05_R12_H18-6_L1_Standard.doc
+Referenz: 800.252.001.D
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ze', '18.6', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-252-001_Abfuelluebersicht_K2000_SS05_R12_H18-6_L1_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12",
+  "Hulsen-diam": "18.6",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.252.001.D"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-252-002_Abfuelluebersicht_K2000_SS05_R12_H18-6_L2_Standard.doc
+Referenz: 800.252.002.D
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ze', '18.6', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-252-002_Abfuelluebersicht_K2000_SS05_R12_H18-6_L2_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12",
+  "Hulsen-diam": "18.6",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.252.002.D"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-253-001_Abfuelluebersicht_K2000_SS05_R11_H17_L1_Anlagen.doc
+Referenz: 800.253.001.E
+Suchschluessel: [('2000', 'SP_0.5', '11', 'ze', '17', '1'), ('2000', 'SP_0.5', '11', 'ze', '18', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-253-001_Abfuelluebersicht_K2000_SS05_R11_H17_L1_Anlagen.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Anlagen",
+  "Referenz_zu_Abfullnorm": "800.253.001.E"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-253-002_Abfuelluebersicht_K2000_SS05_R11_H17_L2_Anlagen.doc
+Referenz: 800.253.002.E
+Suchschluessel: [('2000', 'SP_0.5', '11', 'ze', '17', '2'), ('2000', 'SP_0.5', '11', 'ze', '18', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-253-002_Abfuelluebersicht_K2000_SS05_R11_H17_L2_Anlagen.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Anlagen",
+  "Referenz_zu_Abfullnorm": "800.253.002.E"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-257-001_Abfuelluebersicht_K2000_SS05_R12ze_H20_L1_Standard.doc
+Referenz: 800.257.001.E
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ze', '20', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-257-001_Abfuelluebersicht_K2000_SS05_R12ze_H20_L1_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.257.001.E"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-257-002_Abfuelluebersicht_K2000_SS05_R12ze_H20_L2_Standard.doc
+Referenz: 800.257.002.E
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ze', '20', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-257-002_Abfuelluebersicht_K2000_SS05_R12ze_H20_L2_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.257.002.E"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-262-001_Abfuelluebersicht_K2000_SS05_R12ze_H22_L1_Standard.doc
+Referenz: 800.262.001.E
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ze', '22', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-262-001_Abfuelluebersicht_K2000_SS05_R12ze_H22_L1_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.262.001.E"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-262-002_Abfuelluebersicht_K2000_SS05_R12ze_H22_L2_Standard.doc
+Referenz: 800.262.002.E
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ze', '22', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-262-002_Abfuelluebersicht_K2000_SS05_R12ze_H22_L2_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.262.002.E"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-266-001_Abfuelluebersicht_K2000_SS05_R12ze_H29_L1_Standard.doc
+Referenz: 800.266.001.D
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ze', '29', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-266-001_Abfuelluebersicht_K2000_SS05_R12ze_H29_L1_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.266.001.D"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-266-002_Abfuelluebersicht_K2000_SS05_R12ze_H29_L2_Standard.doc
+Referenz: 800.266.002.D
+Suchschluessel: [('2000', 'SP_0.5', '12', 'ze', '29', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-266-002_Abfuelluebersicht_K2000_SS05_R12ze_H29_L2_Standard.doc",
+  "System": "2000 0.5",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / Anlagen",
+  "Referenz_zu_Abfullnorm": "800.266.002.D"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-284-001_Abfuelluebersicht_K3000_R12ex_H29_L1_Standard.doc
+Referenz: 800.284.001.B
+Suchschluessel: [('3000', 'STANDARD', '12', 'ex', '29', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-284-001_Abfuelluebersicht_K3000_R12ex_H29_L1_Standard.doc",
+  "System": "3000",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.284.001.B"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-284-002_Abfuelluebersicht_K3000_R12ex_H29_L2_Standard.doc
+Referenz: 800.284.002.B
+Suchschluessel: [('3000', 'STANDARD', '12', 'ex', '29', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-284-002_Abfuelluebersicht_K3000_R12ex_H29_L2_Standard.doc",
+  "System": "3000",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.284.002.B"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-298_Abfuelluebersicht_K1000S_R14ze_H28_Schlumberger.doc
+Referenz: 800.298
+Suchschluessel: [('1000S', 'STANDARD', '14', 'ze', '28', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-298_Abfuelluebersicht_K1000S_R14ze_H28_Schlumberger.doc",
+  "System": "1000S",
+  "Rotor-diam": "14 zentrisch",
+  "Hulsen-diam": "28",
+  "Linie": "1",
+  "Linie_Quelle": "1000 Regel",
+  "Funktion": "Schlumberger",
+  "Referenz_zu_Abfullnorm": "800.298"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-300-001_Abfuelluebersicht_K2000S_R12_H16-6_L1_Standard.doc
+Referenz: 800.300.001.C
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '16.6', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-300-001_Abfuelluebersicht_K2000S_R12_H16-6_L1_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12",
+  "Hulsen-diam": "16.6",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.300.001.C"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-300-002_Abfuelluebersicht_K2000S_R12_H16-6_L2_Standard.doc
+Referenz: 800.300.002.C
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '16.6', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-300-002_Abfuelluebersicht_K2000S_R12_H16-6_L2_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12",
+  "Hulsen-diam": "16.6",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.300.002.C"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-304-002_Abfuelluebersicht_K10S_R12ze_H22_L2_Anlagen.doc
+Referenz: 800.304.002.C
+Suchschluessel: [('10S', 'STANDARD', '12', 'ze', '22', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-304-002_Abfuelluebersicht_K10S_R12ze_H22_L2_Anlagen.doc",
+  "System": "10S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Anlagen",
+  "Referenz_zu_Abfullnorm": "800.304.002.C"
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800-333_Abfuelluebersicht_K5000_Standard.doc
+Referenz: 800.333
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Cannot parse Hulsen-diam: -
+Word_Daten:
+{
+  "Datei": "800-333_Abfuelluebersicht_K5000_Standard.doc",
+  "System": "5000",
+  "Rotor-diam": "8.5",
+  "Hulsen-diam": "-",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.333"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-340-001_Abfuelluebersicht_octro2_R12ex_H22_L1_LIPS.doc
+Referenz: 800.340.001.B
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ex', '22', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-340-001_Abfuelluebersicht_octro2_R12ex_H22_L1_LIPS.doc",
+  "System": "octro 2000S(",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.340.001.B"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-340-002_Abfuelluebersicht_octro2_R12ex_H22_L2_LIPS.doc
+Referenz: 800.340.002.B
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ex', '22', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-340-002_Abfuelluebersicht_octro2_R12ex_H22_L2_LIPS.doc",
+  "System": "octro 2000S(",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.340.002.B"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-391-001_Abfuelluebersicht_K4000_R11_H17_L1_Standard-ABS.doc
+Referenz: 800.391.001.C
+Suchschluessel: [('4000', 'STANDARD', '11', 'ze', '17', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-391-001_Abfuelluebersicht_K4000_R11_H17_L1_Standard-ABS.doc",
+  "System": "4000",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / ABS",
+  "Referenz_zu_Abfullnorm": "800.391.001.C"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-391-002_Abfuelluebersicht_K4000_R11_H17_L2_Standard-ABS.doc
+Referenz: 800.391.002.C
+Suchschluessel: [('4000', 'STANDARD', '11', 'ze', '17', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-391-002_Abfuelluebersicht_K4000_R11_H17_L2_Standard-ABS.doc",
+  "System": "4000",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / ABS",
+  "Referenz_zu_Abfullnorm": "800.391.002.C"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-392-001_Abfuelluebersicht_K4000_R12ze_H18_L1_Standard.doc
+Referenz: 800.392.001.C
+Suchschluessel: [('4000', 'STANDARD', '12', 'ze', '18', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-392-001_Abfuelluebersicht_K4000_R12ze_H18_L1_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.392.001.C"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-392-002_Abfuelluebersicht_K4000_R12ze_H18_L2_Standard.doc
+Referenz: 800.392.002.C
+Suchschluessel: [('4000', 'STANDARD', '12', 'ze', '18', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-392-002_Abfuelluebersicht_K4000_R12ze_H18_L2_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.392.002.C"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-394-001_Abfuelluebersicht_K4000_R12ze_H22_L1_Standard.doc
+Referenz: 800.394.001.B
+Suchschluessel: [('4000', 'STANDARD', '12', 'ze', '22', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-394-001_Abfuelluebersicht_K4000_R12ze_H22_L1_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.394.001.B"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-394-002_Abfuelluebersicht_K4000_R12ze_H22_L2_Standard.doc
+Referenz: 800.394.002.C
+Suchschluessel: [('4000', 'STANDARD', '12', 'ze', '22', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-394-002_Abfuelluebersicht_K4000_R12ze_H22_L2_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.394.002.C"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-396-001_Abfuelluebersicht_K4000_R12ex_H29_L1_Standard.doc
+Referenz: 800.396.001.B
+Suchschluessel: [('4000', 'STANDARD', '12', 'ex', '29', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-396-001_Abfuelluebersicht_K4000_R12ex_H29_L1_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.396.001.B"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-396-002_Abfuelluebersicht_K4000_R12ex_H29_L2_Standard.doc
+Referenz: 800.396.002.C
+Suchschluessel: [('4000', 'STANDARD', '12', 'ex', '29', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-396-002_Abfuelluebersicht_K4000_R12ex_H29_L2_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.396.002.C"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-399_Abfuelluebersicht_K1000S_R14ze_H28_parceon.doc
+Referenz: 800.399
+Suchschluessel: [('1000S', 'STANDARD', '14', 'ze', '28', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-399_Abfuelluebersicht_K1000S_R14ze_H28_parceon.doc",
+  "System": "1000S",
+  "Rotor-diam": "14 zentrisch",
+  "Hulsen-diam": "28",
+  "Linie": "1",
+  "Linie_Quelle": "1000 Regel",
+  "Funktion": "parceon",
+  "Referenz_zu_Abfullnorm": "800.399"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-402_Abfuelluebersicht_K2000_R12_H20_L1_Japan.doc
+Referenz: 800.402
+Suchschluessel: [('2000S', 'VARIO', '12', 'ze', '20', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-402_Abfuelluebersicht_K2000_R12_H20_L1_Japan.doc",
+  "System": "2000S",
+  "Rotor-diam": "12",
+  "Hulsen-diam": "20",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Vario / Change Code",
+  "Referenz_zu_Abfullnorm": "800.402"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-410-001_Abfuelluebersicht_K4000_R12ze_H29_L1_Standard.doc
+Referenz: 800.410.001.B
+Suchschluessel: [('4000', 'STANDARD', '12', 'ze', '29', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-410-001_Abfuelluebersicht_K4000_R12ze_H29_L1_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.410.001.B"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-410-002_Abfuelluebersicht_K4000_R12ze_H29_L2_Standard.doc
+Referenz: 800.410.002.C
+Suchschluessel: [('4000', 'STANDARD', '12', 'ze', '29', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-410-002_Abfuelluebersicht_K4000_R12ze_H29_L2_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.410.002.C"
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-413_Abfuelluebersicht_K2000S_R11_H17_L1_Standard.doc
+Referenz: None
+Suchschluessel: [('2000S', 'STANDARD', '11', 'ze', '17', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-413_Abfuelluebersicht_K2000S_R11_H17_L1_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17",
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-427-001_Abfuelluebersicht_K4000_R12ex_H22_L1_Standard.doc
+Referenz: 800.427.001.A
+Suchschluessel: [('4000', 'STANDARD', '12', 'ex', '22', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-427-001_Abfuelluebersicht_K4000_R12ex_H22_L1_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.427.001.A"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-427-002_Abfuelluebersicht_K4000_R12ex_H22_L2_Standard.doc
+Referenz: 800.427.002.A
+Suchschluessel: [('4000', 'STANDARD', '12', 'ex', '22', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-427-002_Abfuelluebersicht_K4000_R12ex_H22_L2_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.427.002.A"
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800-437_Abfuelluebersicht_K4000S_R14ze_H28_Parkeon_3-Bohrreihen.docx
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Linie fehlt
+Word_Daten:
+{
+  "Datei": "800-437_Abfuelluebersicht_K4000S_R14ze_H28_Parkeon_3-Bohrreihen.docx",
+  "System": "4000S",
+  "Rotor-diam": "14 ze",
+  "Hulsen-diam": "28",
+  "Linie": null,
+  "Linie_Quelle": "Dokument",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800-447_Abfuelluebersicht_K4000S_R14ze_H28_Parkeon_2-Bohrreihen.docx
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Linie fehlt
+Word_Daten:
+{
+  "Datei": "800-447_Abfuelluebersicht_K4000S_R14ze_H28_Parkeon_2-Bohrreihen.docx",
+  "System": "4000S",
+  "Rotor-diam": "14 ze",
+  "Hulsen-diam": "28",
+  "Linie": null,
+  "Linie_Quelle": "Dokument",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-450_Abfuelluebersicht-KESO-CASA-R11-H17.doc
+Referenz: 800.450
+Suchschluessel: [('4000S', 'CASA', '11', 'ze', '17', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-450_Abfuelluebersicht-KESO-CASA-R11-H17.doc",
+  "System": "KESO CASA",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17",
+  "Linie": "1",
+  "Linie_Quelle": "4000S Casa Regel",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.450"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-452_Abfuelluebersicht-KESO-CASA-R12ze-H22.doc
+Referenz: 800.452
+Suchschluessel: [('4000S', 'CASA', '12', 'ze', '22', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-452_Abfuelluebersicht-KESO-CASA-R12ze-H22.doc",
+  "System": "KESO CASA",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "4000S Casa Regel",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.452"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-453_Abfuelluebersicht-KESO-CASA-R12ex-H22.doc
+Referenz: 800.453
+Suchschluessel: [('4000S', 'CASA', '12', 'ex', '22', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-453_Abfuelluebersicht-KESO-CASA-R12ex-H22.doc",
+  "System": "KESO CASA",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "4000S Casa Regel",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.453"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-454-Abfuelluebersicht-KESO-CASA-R12ze-H29.doc
+Referenz: 800.454
+Suchschluessel: [('4000S', 'CASA', '12', 'ze', '29', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-454-Abfuelluebersicht-KESO-CASA-R12ze-H29.doc",
+  "System": "KESO CASA",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "4000S Casa Regel",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.454"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-455_Abfuelluebersicht-KESO-CASA-R12ex-H29.doc
+Referenz: 800.455
+Suchschluessel: [('4000S', 'CASA', '12', 'ex', '29', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-455_Abfuelluebersicht-KESO-CASA-R12ex-H29.doc",
+  "System": "KESO CASA",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "4000S Casa Regel",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.455"
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800-472-001_Abfuelluebersicht_K8000_L1_Insert.doc
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Rotor-diam fehlt
+Word_Daten:
+{
+  "Datei": "800-472-001_Abfuelluebersicht_K8000_L1_Insert.doc",
+  "System": "8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00032",
+  "Rotor-diam": null,
+  "Hulsen-diam": null,
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800-472-002_Abfuelluebersicht_K8000_L2_Insert.doc
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Rotor-diam fehlt
+Word_Daten:
+{
+  "Datei": "800-472-002_Abfuelluebersicht_K8000_L2_Insert.doc",
+  "System": "8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00032",
+  "Rotor-diam": null,
+  "Hulsen-diam": null,
+  "Linie": "2",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-477-001_Abfuelluebersicht_K8000_R12ze_H29_L1_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'STANDARD', '12', 'ze', '29', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-477-001_Abfuelluebersicht_K8000_R12ze_H29_L1_Standard.doc",
+  "System": "8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00032",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-477-002_Abfuelluebersicht_K8000_R12ze_H29_L2_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'STANDARD', '12', 'ze', '29', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-477-002_Abfuelluebersicht_K8000_R12ze_H29_L2_Standard.doc",
+  "System": "8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00032",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-479-001_Abfuelluebersicht_K8000_R12ex_H29_L1_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'STANDARD', '12', 'ex', '29', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-479-001_Abfuelluebersicht_K8000_R12ex_H29_L1_Standard.doc",
+  "System": "8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00032",
+  "Rotor-diam": "12 ex",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-479-002_Abfuelluebersicht_K8000_R12ex_H29_L2_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'STANDARD', '12', 'ex', '29', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-479-002_Abfuelluebersicht_K8000_R12ex_H29_L2_Standard.doc",
+  "System": "8000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00032",
+  "Rotor-diam": "12 ex",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-481-001_Abfuelluebersicht_K8000_R12ze_H18_L1_Standard.doc
+Referenz: 800.481.001
+Suchschluessel: [('8000', 'STANDARD', '12', 'ze', '18', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-481-001_Abfuelluebersicht_K8000_R12ze_H18_L1_Standard.doc",
+  "System": "8000",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.481.001"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-481-002_Abfuelluebersicht_K8000_R12ze_H18_L2_Standard.doc
+Referenz: 800.481.002
+Suchschluessel: [('8000', 'STANDARD', '12', 'ze', '18', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-481-002_Abfuelluebersicht_K8000_R12ze_H18_L2_Standard.doc",
+  "System": "8000",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.481.002"
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-482-001_Abfuelluebersicht_K8000_R12ze_H22_L1_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'STANDARD', '12', 'ze', '22', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-482-001_Abfuelluebersicht_K8000_R12ze_H22_L1_Standard.doc",
+  "System": "8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0012\b\u0000\u0000\u0013\b\u0000\u0000\b\u0000\u0000µ\b\u0000\u0000¶\b\u0000\u0000¾\b\u0000\u0000À\b\u0000\u0000ö\b\u0000\u0000÷\b\u0000\u0000ÿ\b\u0000\u0000\u0001\t\u0000\u0000E\t\u0000\u0000F\t\u0000\u0000N\t\u0000\u0000P\t\u0000\u0000Ž\t\u0000\u0000\t\u0000\u0000—\t\u0000\u0000™\t\u0000\u0000×\t\u0000\u0000Ø\t\u0000\u0000à\t\u0000\u0000â\t\u0000\u0000\u0018",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-482-002_Abfuelluebersicht_K8000_R12ze_H22_L2_Standard.doc
+Referenz: 800.482.002
+Suchschluessel: [('8000', 'STANDARD', '12', 'ze', '22', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-482-002_Abfuelluebersicht_K8000_R12ze_H22_L2_Standard.doc",
+  "System": "8000",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.482.002"
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-484-001_Abfuelluebersicht_K8000_R12ze_H20_L1_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'STANDARD', '12', 'ze', '20', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-484-001_Abfuelluebersicht_K8000_R12ze_H20_L1_Standard.doc",
+  "System": "8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0012\b\u0000\u0000\u0013\b\u0000\u0000\b\u0000\u0000ž\b\u0000\u0000§\b\u0000\u0000ª\b\u0000\u0000±\b\u0000\u0000µ\b\u0000\u0000¶\b\u0000\u0000¾\b\u0000\u0000À\b\u0000\u0000Þ\b\u0000\u0000æ\b\u0000\u0000ç\b\u0000\u0000ð\b\u0000\u0000ó\b\u0000\u0000ú\b\u0000\u0000þ\b\u0000\u0000ÿ\b",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "20",
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-484-002_Abfuelluebersicht_K8000_R12ze_H20_L2_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'STANDARD', '12', 'ze', '20', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-484-002_Abfuelluebersicht_K8000_R12ze_H20_L2_Standard.doc",
+  "System": "8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\b\u0000\u0000\u0012\b\u0000\u0000\u0013\b\u0000\u0000\b\u0000\u0000ž\b\u0000\u0000§\b\u0000\u0000ª\b\u0000\u0000±\b\u0000\u0000µ\b\u0000\u0000¶\b\u0000\u0000¾\b\u0000\u0000À\b\u0000\u0000Þ\b\u0000\u0000æ\b\u0000\u0000ç\b\u0000\u0000ð\b\u0000\u0000ó\b\u0000\u0000ú\b\u0000\u0000þ\b\u0000\u0000ÿ\b",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "20",
+  "Linie": "2",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-485-001_Abfuelluebersicht_K4000S_R12ze_H27_L1_Standard.doc
+Referenz: 800.485.001
+Suchschluessel: [('4000S', 'STANDARD', '12', 'ze', '27', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-485-001_Abfuelluebersicht_K4000S_R12ze_H27_L1_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.485.001"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-485-002_Abfuelluebersicht_K4000S_R12ze_H27_L2_Standard.doc
+Referenz: 800.485.002
+Suchschluessel: [('4000S', 'STANDARD', '12', 'ze', '27', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-485-002_Abfuelluebersicht_K4000S_R12ze_H27_L2_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.485.002"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-488-001_Abfuelluebersicht_K4000_R12ze_H20_L1_Standard.doc
+Referenz: 800.488.001
+Suchschluessel: [('4000', 'STANDARD', '12', 'ze', '20', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-488-001_Abfuelluebersicht_K4000_R12ze_H20_L1_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.488.001"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-488-002_Abfuelluebersicht_K4000_R12ze_H20_L2_Standard.doc
+Referenz: 800.488.002
+Suchschluessel: [('4000', 'STANDARD', '12', 'ze', '20', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-488-002_Abfuelluebersicht_K4000_R12ze_H20_L2_Standard.doc",
+  "System": "4000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.488.002"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-489_Abfuelluebersicht_K2500_R12ze_H20_Standard.doc
+Referenz: 800.489
+Suchschluessel: [('2500', 'STANDARD', '12', 'ze', '20', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-489_Abfuelluebersicht_K2500_R12ze_H20_Standard.doc",
+  "System": "2500",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "1",
+  "Linie_Quelle": "2500 Regel",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.489"
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-535-001_Abfuelluebersicht_K8000_R12ze_H27_L1_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'STANDARD', '12', 'ze', '27', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-535-001_Abfuelluebersicht_K8000_R12ze_H27_L1_Standard.doc",
+  "System": "8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00032",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "27",
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-535-002_Abfuelluebersicht_K8000_R12ze_H27_L2_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'STANDARD', '12', 'ze', '27', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-535-002_Abfuelluebersicht_K8000_R12ze_H27_L2_Standard.doc",
+  "System": "8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00032",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "27",
+  "Linie": "2",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-536-001_Abfuelluebersicht_K4000_L1_Insert.doc
+Referenz: 800.536.001
+Suchschluessel: [('4000', 'STANDARD', '11', 'ze', '17', '1'), ('4000', 'STANDARD', '11', 'ze', '16.4', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-536-001_Abfuelluebersicht_K4000_L1_Insert.doc",
+  "System": "4000",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 16.4 Insert",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / ABS",
+  "Referenz_zu_Abfullnorm": "800.536.001"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-536-002_Abfuelluebersicht_K4000_L2_Insert.doc
+Referenz: 800.536.002
+Suchschluessel: [('4000', 'STANDARD', '11', 'ze', '17', '2'), ('4000', 'STANDARD', '11', 'ze', '16.4', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-536-002_Abfuelluebersicht_K4000_L2_Insert.doc",
+  "System": "4000",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 16.4 Insert",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / ABS",
+  "Referenz_zu_Abfullnorm": "800.536.002"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-538_Abfuelluebersicht_K2500_Insert.doc
+Referenz: 800.538
+Suchschluessel: [('4000S', 'CASA', '11', 'ze', '17', '1'), ('4000S', 'CASA', '11', 'ze', '16.4', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-538_Abfuelluebersicht_K2500_Insert.doc",
+  "System": "2500 (KESO Casa)",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 16.4 Insert",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / ABS",
+  "Referenz_zu_Abfullnorm": "800.538"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-540-001_Abfuelluebersicht_K10RS_L1_Insert.doc
+Referenz: 800.540.001
+Suchschluessel: [('10RS', 'STANDARD', '11', 'ze', '17', '1'), ('10RS', 'STANDARD', '11', 'ze', '16.4', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-540-001_Abfuelluebersicht_K10RS_L1_Insert.doc",
+  "System": "10RS / 10RS (",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 16.4 Insert",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / ABS",
+  "Referenz_zu_Abfullnorm": "800.540.001"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-542_Abfuelluebersicht-KESO-K6000FP2-R12ze-H18.doc
+Referenz: 800.542
+Suchschluessel: [('6000', 'FP2', '12', 'ze', '18', '1'), ('6000', 'FP2', '12', 'ze', '18', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-542_Abfuelluebersicht-KESO-K6000FP2-R12ze-H18.doc",
+  "System": "KESO K6000FP2",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "-",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.542"
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-543_Abfuelluebersicht-KESO-K6000FP2-R12ze-H22.doc
+Referenz: None
+Suchschluessel: [('6000', 'FP2', '12', 'ze', '22', '1'), ('6000', 'FP2', '12', 'ze', '22', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-543_Abfuelluebersicht-KESO-K6000FP2-R12ze-H22.doc",
+  "System": "KESO K6000FP2",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "-",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-544_Abfuelluebersicht-KESO-K6000FP2-R12ex-H22.doc
+Referenz: 800.544
+Suchschluessel: [('6000', 'FP2', '12', 'ex', '22', '1'), ('6000', 'FP2', '12', 'ex', '22', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-544_Abfuelluebersicht-KESO-K6000FP2-R12ex-H22.doc",
+  "System": "KESO K6000FP2",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "-",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.544"
+}
+
+Grund: kein passender Excel-Eintrag
+Word-Datei: 800-550_Abfuelluebersicht_K6000FP2_R12ze_H20_L2_Standard.doc
+Referenz: 800.550
+Suchschluessel: [('6000', 'FP2', '12', 'ze', '20', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-550_Abfuelluebersicht_K6000FP2_R12ze_H20_L2_Standard.doc",
+  "System": "K6000FP2",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "2",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.550"
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800-627-001_Abfuelluebersicht_K8000_OM3_R11_L1.docx
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Hulsen-diam fehlt
+Word_Daten:
+{
+  "Datei": "800-627-001_Abfuelluebersicht_K8000_OM3_R11_L1.docx",
+  "System": "8000",
+  "Rotor-diam": "11",
+  "Hulsen-diam": null,
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800-627-002_Abfuelluebersicht_K8000_OM3_R11_L2.docx
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Hulsen-diam fehlt
+Word_Daten:
+{
+  "Datei": "800-627-002_Abfuelluebersicht_K8000_OM3_R11_L2.docx",
+  "System": "8000",
+  "Rotor-diam": "11",
+  "Hulsen-diam": null,
+  "Linie": "2",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-628-001_Abfuelluebersicht_K8000_OM3_R12ze_H29_L1_Standard.doc
+Referenz: None
+Suchschluessel: [('800', 'OM3', '12', 'ze', '29', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-628-001_Abfuelluebersicht_K8000_OM3_R12ze_H29_L1_Standard.doc",
+  "System": "K800\u00000\u0000©\u00033",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-628-002_Abfuelluebersicht_K8000_OM3_R12ze_H29_L2_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'OM3', '12', 'ze', '29', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-628-002_Abfuelluebersicht_K8000_OM3_R12ze_H29_L2_Standard.doc",
+  "System": "K8000\u0000\u0000\u0000\u0000\u0000©\u00033",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-630-001_Abfuelluebersicht_K8000_OM3_R12ex_H29_L1_Standard.doc
+Referenz: None
+Suchschluessel: [('80', 'OM3', '12', 'ex', '29', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-630-001_Abfuelluebersicht_K8000_OM3_R12ex_H29_L1_Standard.doc",
+  "System": "K80\u00000\u00000\u0000©\u00033",
+  "Rotor-diam": "12 ex",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-630-002_Abfuelluebersicht_K8000_OM3_R12ex_H29_L2_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'OM3', '12', 'ex', '29', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-630-002_Abfuelluebersicht_K8000_OM3_R12ex_H29_L2_Standard.doc",
+  "System": "K8000\u0000\u0000\u0000\u0000©\u00033",
+  "Rotor-diam": "12 ex",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-632-001_Abfuelluebersicht_K8000_OM3_R12ze_H18_L1_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'OM3', '12', 'ze', '18', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-632-001_Abfuelluebersicht_K8000_OM3_R12ze_H18_L1_Standard.doc",
+  "System": "K8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00033",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "18",
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-632-002_Abfuelluebersicht_K8000_OM3_R12ze_H18_L2_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'OM3', '12', 'ze', '18', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-632-002_Abfuelluebersicht_K8000_OM3_R12ze_H18_L2_Standard.doc",
+  "System": "K8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00033",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "18",
+  "Linie": "2",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-633-001_Abfuelluebersicht_K8000_OM3_R12ze_H22_L1_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'OM3', '12', 'ze', '22', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-633-001_Abfuelluebersicht_K8000_OM3_R12ze_H22_L1_Standard.doc",
+  "System": "K8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00033",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-633-002_Abfuelluebersicht_K8000_OM3_R12ze_H22_L2_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'OM3', '12', 'ze', '22', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-633-002_Abfuelluebersicht_K8000_OM3_R12ze_H22_L2_Standard.doc",
+  "System": "K8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00033",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-635-001_Abfuelluebersicht_K8000_OM3_R12ze_H20_L1_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'OM3', '12', 'ze', '20', '1')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-635-001_Abfuelluebersicht_K8000_OM3_R12ze_H20_L1_Standard.doc",
+  "System": "K8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00033",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "20",
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Referenz_zu_Abfullnorm fehlt
+Word-Datei: 800-635-002_Abfuelluebersicht_K8000_OM3_R12ze_H20_L2_Standard.doc
+Referenz: None
+Suchschluessel: [('8000', 'OM3', '12', 'ze', '20', '2')]
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: None
+Word_Daten:
+{
+  "Datei": "800-635-002_Abfuelluebersicht_K8000_OM3_R12ze_H20_L2_Standard.doc",
+  "System": "K8000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00033",
+  "Rotor-diam": "12 ze",
+  "Hulsen-diam": "20",
+  "Linie": "2",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800.561.001_Abfuelluebersicht_K9000_L1_Insert.doc
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Rotor-diam fehlt
+Word_Daten:
+{
+  "Datei": "800.561.001_Abfuelluebersicht_K9000_L1_Insert.doc",
+  "System": "9000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00032",
+  "Rotor-diam": null,
+  "Hulsen-diam": null,
+  "Linie": "1",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800.561.002_Abfuelluebersicht_K9000_L2_Insert.doc
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Rotor-diam fehlt
+Word_Daten:
+{
+  "Datei": "800.561.002_Abfuelluebersicht_K9000_L2_Insert.doc",
+  "System": "9000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000©\u00032",
+  "Rotor-diam": null,
+  "Hulsen-diam": null,
+  "Linie": "2",
+  "Linie_Quelle": "Dateiname",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800.577.001_Abfüllübersicht K9000.doc
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Rotor-diam fehlt
+Word_Daten:
+{
+  "Datei": "800.577.001_Abfüllübersicht K9000.doc",
+  "System": "9000",
+  "Rotor-diam": null,
+  "Hulsen-diam": null,
+  "Linie": null,
+  "Linie_Quelle": "Dokument",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800.577.002_Abfüllübersicht K9000.doc
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Rotor-diam fehlt
+Word_Daten:
+{
+  "Datei": "800.577.002_Abfüllübersicht K9000.doc",
+  "System": "9000",
+  "Rotor-diam": null,
+  "Hulsen-diam": null,
+  "Linie": null,
+  "Linie_Quelle": "Dokument",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800.581.001_Abfüllübersicht K9000 centric Standard.docx
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Rotor-diam fehlt
+Word_Daten:
+{
+  "Datei": "800.581.001_Abfüllübersicht K9000 centric Standard.docx",
+  "System": "9000",
+  "Rotor-diam": null,
+  "Hulsen-diam": null,
+  "Linie": null,
+  "Linie_Quelle": "Dokument",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800.581.002_Abfüllübersicht K9000 centric Standard.docx
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Rotor-diam fehlt
+Word_Daten:
+{
+  "Datei": "800.581.002_Abfüllübersicht K9000 centric Standard.docx",
+  "System": "9000",
+  "Rotor-diam": null,
+  "Hulsen-diam": null,
+  "Linie": null,
+  "Linie_Quelle": "Dokument",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800.597_Filling norm Flowbird K8000 Omega2 3 lines.docx
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Rotor-diam fehlt
+Word_Daten:
+{
+  "Datei": "800.597_Filling norm Flowbird K8000 Omega2 3 lines.docx",
+  "System": "8000",
+  "Rotor-diam": null,
+  "Hulsen-diam": null,
+  "Linie": null,
+  "Linie_Quelle": "Dokument",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Word-Datei nicht parsebar
+Word-Datei: 800.598_Filling norm Flowbird K8000 Omega2 2 lines.docx
+Referenz: None
+Suchschluessel: None
+Anzahl Treffer: 0
+Trefferzeilen: []
+Fehler: Rotor-diam fehlt
+Word_Daten:
+{
+  "Datei": "800.598_Filling norm Flowbird K8000 Omega2 2 lines.docx",
+  "System": "8000",
+  "Rotor-diam": null,
+  "Hulsen-diam": null,
+  "Linie": null,
+  "Linie_Quelle": "Dokument",
+  "Funktion": null,
+  "Referenz_zu_Abfullnorm": null
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-013-001_Abfuelluebersicht_K2000S_R11_H17_L1_Standard-ABS.doc
+Referenz: 800.013.001.P
+Suchschluessel: [('2000S', 'STANDARD', '11', 'ze', '17', '1'), ('2000S', 'STANDARD', '11', 'ze', '18', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [113]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.013.001.P", "Word_Datei": "800-013-001_Abfuelluebersicht_K2000S_R11_H17_L1_Standard-ABS.doc", "Excelzeile": 113, "Excel_Artikel": "HK_11/17_ze_L1_W_83_D_2.7_OM1"}, {"Referenz_zu_Abfullnorm": "800.537.001", "Word_Datei": "800-537-001_Abfuelluebersicht_K2000_L1_Insert.doc", "Excelzeile": 113, "Excel_Artikel": "HK_11/17_ze_L1_W_83_D_2.7_OM1"}]
+Word_Daten:
+{
+  "Datei": "800-013-001_Abfuelluebersicht_K2000S_R11_H17_L1_Standard-ABS.doc",
+  "System": "2000S",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / ABS",
+  "Referenz_zu_Abfullnorm": "800.013.001.P"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-537-001_Abfuelluebersicht_K2000_L1_Insert.doc
+Referenz: 800.537.001
+Suchschluessel: [('2000S', 'STANDARD', '11', 'ze', '17', '1'), ('2000S', 'STANDARD', '11', 'ze', '16.4', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [113]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.013.001.P", "Word_Datei": "800-013-001_Abfuelluebersicht_K2000S_R11_H17_L1_Standard-ABS.doc", "Excelzeile": 113, "Excel_Artikel": "HK_11/17_ze_L1_W_83_D_2.7_OM1"}, {"Referenz_zu_Abfullnorm": "800.537.001", "Word_Datei": "800-537-001_Abfuelluebersicht_K2000_L1_Insert.doc", "Excelzeile": 113, "Excel_Artikel": "HK_11/17_ze_L1_W_83_D_2.7_OM1"}]
+Word_Daten:
+{
+  "Datei": "800-537-001_Abfuelluebersicht_K2000_L1_Insert.doc",
+  "System": "2000S / Omega",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 16.4 Insert",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / ABS",
+  "Referenz_zu_Abfullnorm": "800.537.001"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-013-001_Abfuelluebersicht_K2000S_R11_H17_L1_Standard-ABS.doc
+Referenz: 800.013.001.P
+Suchschluessel: [('2000S', 'STANDARD', '11', 'ze', '17', '1'), ('2000S', 'STANDARD', '11', 'ze', '18', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [123]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.013.001.P", "Word_Datei": "800-013-001_Abfuelluebersicht_K2000S_R11_H17_L1_Standard-ABS.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.013.002.T", "Word_Datei": "800-013-002_Abfuelluebersicht_K2000S_R11_H17_L2_Standard-ABS.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.537.001", "Word_Datei": "800-537-001_Abfuelluebersicht_K2000_L1_Insert.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.537.002", "Word_Datei": "800-537-002_Abfuelluebersicht_K2000_L2_Insert.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}]
+Word_Daten:
+{
+  "Datei": "800-013-001_Abfuelluebersicht_K2000S_R11_H17_L1_Standard-ABS.doc",
+  "System": "2000S",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / ABS",
+  "Referenz_zu_Abfullnorm": "800.013.001.P"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-013-002_Abfuelluebersicht_K2000S_R11_H17_L2_Standard-ABS.doc
+Referenz: 800.013.002.T
+Suchschluessel: [('2000S', 'STANDARD', '11', 'ze', '17', '2'), ('2000S', 'STANDARD', '11', 'ze', '18', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [123]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.013.001.P", "Word_Datei": "800-013-001_Abfuelluebersicht_K2000S_R11_H17_L1_Standard-ABS.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.013.002.T", "Word_Datei": "800-013-002_Abfuelluebersicht_K2000S_R11_H17_L2_Standard-ABS.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.537.001", "Word_Datei": "800-537-001_Abfuelluebersicht_K2000_L1_Insert.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.537.002", "Word_Datei": "800-537-002_Abfuelluebersicht_K2000_L2_Insert.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}]
+Word_Daten:
+{
+  "Datei": "800-013-002_Abfuelluebersicht_K2000S_R11_H17_L2_Standard-ABS.doc",
+  "System": "2000S",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / ABS",
+  "Referenz_zu_Abfullnorm": "800.013.002.T"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-537-001_Abfuelluebersicht_K2000_L1_Insert.doc
+Referenz: 800.537.001
+Suchschluessel: [('2000S', 'STANDARD', '11', 'ze', '17', '1'), ('2000S', 'STANDARD', '11', 'ze', '16.4', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [123]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.013.001.P", "Word_Datei": "800-013-001_Abfuelluebersicht_K2000S_R11_H17_L1_Standard-ABS.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.013.002.T", "Word_Datei": "800-013-002_Abfuelluebersicht_K2000S_R11_H17_L2_Standard-ABS.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.537.001", "Word_Datei": "800-537-001_Abfuelluebersicht_K2000_L1_Insert.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.537.002", "Word_Datei": "800-537-002_Abfuelluebersicht_K2000_L2_Insert.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}]
+Word_Daten:
+{
+  "Datei": "800-537-001_Abfuelluebersicht_K2000_L1_Insert.doc",
+  "System": "2000S / Omega",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 16.4 Insert",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / ABS",
+  "Referenz_zu_Abfullnorm": "800.537.001"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-537-002_Abfuelluebersicht_K2000_L2_Insert.doc
+Referenz: 800.537.002
+Suchschluessel: [('2000S', 'STANDARD', '11', 'ze', '17', '2'), ('2000S', 'STANDARD', '11', 'ze', '16.4', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [123]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.013.001.P", "Word_Datei": "800-013-001_Abfuelluebersicht_K2000S_R11_H17_L1_Standard-ABS.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.013.002.T", "Word_Datei": "800-013-002_Abfuelluebersicht_K2000S_R11_H17_L2_Standard-ABS.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.537.001", "Word_Datei": "800-537-001_Abfuelluebersicht_K2000_L1_Insert.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.537.002", "Word_Datei": "800-537-002_Abfuelluebersicht_K2000_L2_Insert.doc", "Excelzeile": 123, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_83"}]
+Word_Daten:
+{
+  "Datei": "800-537-002_Abfuelluebersicht_K2000_L2_Insert.doc",
+  "System": "2000S / Omega",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 16.4 Insert",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard / ABS",
+  "Referenz_zu_Abfullnorm": "800.537.002"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-031-001_Abfuelluebersicht_K1000S_R12ze_H18_L1_Standard.doc
+Referenz: 800.031.001.K
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ze', '18', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [43]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.031.001.K", "Word_Datei": "800-031-001_Abfuelluebersicht_K1000S_R12ze_H18_L1_Standard.doc", "Excelzeile": 43, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_83_RHOM"}, {"Referenz_zu_Abfullnorm": "800.031.002.F", "Word_Datei": "800-031-002_Abfuelluebersicht_K1000S_R12ze_H18_L2_Standard.doc", "Excelzeile": 43, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_83_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-031-001_Abfuelluebersicht_K1000S_R12ze_H18_L1_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.031.001.K"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-031-002_Abfuelluebersicht_K1000S_R12ze_H18_L2_Standard.doc
+Referenz: 800.031.002.F
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ze', '18', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [43]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.031.001.K", "Word_Datei": "800-031-001_Abfuelluebersicht_K1000S_R12ze_H18_L1_Standard.doc", "Excelzeile": 43, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_83_RHOM"}, {"Referenz_zu_Abfullnorm": "800.031.002.F", "Word_Datei": "800-031-002_Abfuelluebersicht_K1000S_R12ze_H18_L2_Standard.doc", "Excelzeile": 43, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_83_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-031-002_Abfuelluebersicht_K1000S_R12ze_H18_L2_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.031.002.F"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-032-001_Abfuelluebersicht_K1000S_R12ex_H22_L1_Standard.doc
+Referenz: 800.032.001.L
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ex', '22', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [45]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.032.001.L", "Word_Datei": "800-032-001_Abfuelluebersicht_K1000S_R12ex_H22_L1_Standard.doc", "Excelzeile": 45, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_83_RHOM"}, {"Referenz_zu_Abfullnorm": "800.032.002.G", "Word_Datei": "800-032-002_Abfuelluebersicht_K1000S_R12ex_H22_L2_Standard.doc", "Excelzeile": 45, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_83_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-032-001_Abfuelluebersicht_K1000S_R12ex_H22_L1_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.032.001.L"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-032-002_Abfuelluebersicht_K1000S_R12ex_H22_L2_Standard.doc
+Referenz: 800.032.002.G
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ex', '22', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [45]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.032.001.L", "Word_Datei": "800-032-001_Abfuelluebersicht_K1000S_R12ex_H22_L1_Standard.doc", "Excelzeile": 45, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_83_RHOM"}, {"Referenz_zu_Abfullnorm": "800.032.002.G", "Word_Datei": "800-032-002_Abfuelluebersicht_K1000S_R12ex_H22_L2_Standard.doc", "Excelzeile": 45, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_83_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-032-002_Abfuelluebersicht_K1000S_R12ex_H22_L2_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.032.002.G"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-033-001_Abfuelluebersicht_K1000S_R12ze_H29_L1_Standard.doc
+Referenz: 800.033.001.H
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ze', '29', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [49]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.033.001.H", "Word_Datei": "800-033-001_Abfuelluebersicht_K1000S_R12ze_H29_L1_Standard.doc", "Excelzeile": 49, "Excel_Artikel": "SE_12/29_ze_L1/L2_S_83_RHOM"}, {"Referenz_zu_Abfullnorm": "800.033.002.E", "Word_Datei": "800-033-002_Abfuelluebersicht_K1000S_R12ze_H29_L2_Standard.doc", "Excelzeile": 49, "Excel_Artikel": "SE_12/29_ze_L1/L2_S_83_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-033-001_Abfuelluebersicht_K1000S_R12ze_H29_L1_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.033.001.H"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-033-002_Abfuelluebersicht_K1000S_R12ze_H29_L2_Standard.doc
+Referenz: 800.033.002.E
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ze', '29', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [49]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.033.001.H", "Word_Datei": "800-033-001_Abfuelluebersicht_K1000S_R12ze_H29_L1_Standard.doc", "Excelzeile": 49, "Excel_Artikel": "SE_12/29_ze_L1/L2_S_83_RHOM"}, {"Referenz_zu_Abfullnorm": "800.033.002.E", "Word_Datei": "800-033-002_Abfuelluebersicht_K1000S_R12ze_H29_L2_Standard.doc", "Excelzeile": 49, "Excel_Artikel": "SE_12/29_ze_L1/L2_S_83_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-033-002_Abfuelluebersicht_K1000S_R12ze_H29_L2_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.033.002.E"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-043-001_Abfuelluebersicht_K1000_R12ze_H18_L1_Standard.doc
+Referenz: 800.043.001.D
+Suchschluessel: [('1000', 'STANDARD', '12', 'ze', '18', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [17]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.043.001.D", "Word_Datei": "800-043-001_Abfuelluebersicht_K1000_R12ze_H18_L1_Standard.doc", "Excelzeile": 17, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_88_RHOM"}, {"Referenz_zu_Abfullnorm": "800.043.002.A", "Word_Datei": "800-043-002_Abfuelluebersicht_K1000_R12ze_H18_L2_Standard.doc", "Excelzeile": 17, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_88_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-043-001_Abfuelluebersicht_K1000_R12ze_H18_L1_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.043.001.D"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-043-002_Abfuelluebersicht_K1000_R12ze_H18_L2_Standard.doc
+Referenz: 800.043.002.A
+Suchschluessel: [('1000', 'STANDARD', '12', 'ze', '18', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [17]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.043.001.D", "Word_Datei": "800-043-001_Abfuelluebersicht_K1000_R12ze_H18_L1_Standard.doc", "Excelzeile": 17, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_88_RHOM"}, {"Referenz_zu_Abfullnorm": "800.043.002.A", "Word_Datei": "800-043-002_Abfuelluebersicht_K1000_R12ze_H18_L2_Standard.doc", "Excelzeile": 17, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_88_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-043-002_Abfuelluebersicht_K1000_R12ze_H18_L2_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.043.002.A"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-044-001_Abfuelluebersicht_K1000_R12ex_H22_L1_Standard.doc
+Referenz: 800.044.001.F
+Suchschluessel: [('1000', 'STANDARD', '12', 'ex', '22', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [18]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.044.001.F", "Word_Datei": "800-044-001_Abfuelluebersicht_K1000_R12ex_H22_L1_Standard.doc", "Excelzeile": 18, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_88_RHOM"}, {"Referenz_zu_Abfullnorm": "800.044.002.D", "Word_Datei": "800-044-002_Abfuelluebersicht_K1000_R12ex_H22_L2_Standard.doc", "Excelzeile": 18, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_88_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-044-001_Abfuelluebersicht_K1000_R12ex_H22_L1_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.044.001.F"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-044-002_Abfuelluebersicht_K1000_R12ex_H22_L2_Standard.doc
+Referenz: 800.044.002.D
+Suchschluessel: [('1000', 'STANDARD', '12', 'ex', '22', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [18]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.044.001.F", "Word_Datei": "800-044-001_Abfuelluebersicht_K1000_R12ex_H22_L1_Standard.doc", "Excelzeile": 18, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_88_RHOM"}, {"Referenz_zu_Abfullnorm": "800.044.002.D", "Word_Datei": "800-044-002_Abfuelluebersicht_K1000_R12ex_H22_L2_Standard.doc", "Excelzeile": 18, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_88_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-044-002_Abfuelluebersicht_K1000_R12ex_H22_L2_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.044.002.D"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-046-001_Abfuelluebersicht_K1000_R12ex_H29_L1_Standard.doc
+Referenz: 800.046.001.C
+Suchschluessel: [('1000', 'STANDARD', '12', 'ex', '29', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [21]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.046.001.C", "Word_Datei": "800-046-001_Abfuelluebersicht_K1000_R12ex_H29_L1_Standard.doc", "Excelzeile": 21, "Excel_Artikel": "SE_12/29_ex_L1/L2_S_88_RHOM"}, {"Referenz_zu_Abfullnorm": "800.046.002.A", "Word_Datei": "800-046-002_Abfuelluebersicht_K1000_R12ex_H29_L2_Standard.doc", "Excelzeile": 21, "Excel_Artikel": "SE_12/29_ex_L1/L2_S_88_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-046-001_Abfuelluebersicht_K1000_R12ex_H29_L1_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.046.001.C"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-046-002_Abfuelluebersicht_K1000_R12ex_H29_L2_Standard.doc
+Referenz: 800.046.002.A
+Suchschluessel: [('1000', 'STANDARD', '12', 'ex', '29', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [21]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.046.001.C", "Word_Datei": "800-046-001_Abfuelluebersicht_K1000_R12ex_H29_L1_Standard.doc", "Excelzeile": 21, "Excel_Artikel": "SE_12/29_ex_L1/L2_S_88_RHOM"}, {"Referenz_zu_Abfullnorm": "800.046.002.A", "Word_Datei": "800-046-002_Abfuelluebersicht_K1000_R12ex_H29_L2_Standard.doc", "Excelzeile": 21, "Excel_Artikel": "SE_12/29_ex_L1/L2_S_88_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-046-002_Abfuelluebersicht_K1000_R12ex_H29_L2_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.046.002.A"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc
+Referenz: 800.047.001.C
+Suchschluessel: [('2000', 'SP_0.4', '11', 'ze', '17', '1'), ('2000', 'SP_0.4', '11', 'ze', '18', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [50]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.047.001.C", "Word_Datei": "800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc", "Excelzeile": 50, "Excel_Artikel": "HK_11/17_ze_L1_W_88_D_2.7_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.539.001", "Word_Datei": "800-539-001_Abfuelluebersicht_K2000_SS04_L1_Insert.doc", "Excelzeile": 50, "Excel_Artikel": "HK_11/17_ze_L1_W_88_D_2.7_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.047.001.C"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-539-001_Abfuelluebersicht_K2000_SS04_L1_Insert.doc
+Referenz: 800.539.001
+Suchschluessel: [('2000', 'SP_0.4', '11', 'ze', '17', '1'), ('2000', 'SP_0.4', '11', 'ze', '16.4', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [50]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.047.001.C", "Word_Datei": "800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc", "Excelzeile": 50, "Excel_Artikel": "HK_11/17_ze_L1_W_88_D_2.7_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.539.001", "Word_Datei": "800-539-001_Abfuelluebersicht_K2000_SS04_L1_Insert.doc", "Excelzeile": 50, "Excel_Artikel": "HK_11/17_ze_L1_W_88_D_2.7_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-539-001_Abfuelluebersicht_K2000_SS04_L1_Insert.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 16.4 Insert",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.539.001"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc
+Referenz: 800.047.001.C
+Suchschluessel: [('2000', 'SP_0.4', '11', 'ze', '17', '1'), ('2000', 'SP_0.4', '11', 'ze', '18', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [72]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.047.001.C", "Word_Datei": "800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.047.002", "Word_Datei": "800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.539.001", "Word_Datei": "800-539-001_Abfuelluebersicht_K2000_SS04_L1_Insert.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.539.002", "Word_Datei": "800-539-002_Abfuelluebersicht_K2000_SS04_L2_Insert.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.047.001.C"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc
+Referenz: 800.047.002
+Suchschluessel: [('2000', 'SP_0.4', '11', 'ze', '17', '2'), ('2000', 'SP_0.4', '11', 'ze', '18', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [72]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.047.001.C", "Word_Datei": "800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.047.002", "Word_Datei": "800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.539.001", "Word_Datei": "800-539-001_Abfuelluebersicht_K2000_SS04_L1_Insert.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.539.002", "Word_Datei": "800-539-002_Abfuelluebersicht_K2000_SS04_L2_Insert.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.047.002"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-539-001_Abfuelluebersicht_K2000_SS04_L1_Insert.doc
+Referenz: 800.539.001
+Suchschluessel: [('2000', 'SP_0.4', '11', 'ze', '17', '1'), ('2000', 'SP_0.4', '11', 'ze', '16.4', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [72]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.047.001.C", "Word_Datei": "800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.047.002", "Word_Datei": "800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.539.001", "Word_Datei": "800-539-001_Abfuelluebersicht_K2000_SS04_L1_Insert.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.539.002", "Word_Datei": "800-539-002_Abfuelluebersicht_K2000_SS04_L2_Insert.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-539-001_Abfuelluebersicht_K2000_SS04_L1_Insert.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 16.4 Insert",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.539.001"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-539-002_Abfuelluebersicht_K2000_SS04_L2_Insert.doc
+Referenz: 800.539.002
+Suchschluessel: [('2000', 'SP_0.4', '11', 'ze', '17', '2'), ('2000', 'SP_0.4', '11', 'ze', '16.4', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [72]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.047.001.C", "Word_Datei": "800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.047.002", "Word_Datei": "800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.539.001", "Word_Datei": "800-539-001_Abfuelluebersicht_K2000_SS04_L1_Insert.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.539.002", "Word_Datei": "800-539-002_Abfuelluebersicht_K2000_SS04_L2_Insert.doc", "Excelzeile": 72, "Excel_Artikel": "SE_11/17_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-539-002_Abfuelluebersicht_K2000_SS04_L2_Insert.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 16.4 Insert",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.539.002"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc
+Referenz: 800.047.001.C
+Suchschluessel: [('2000', 'SP_0.4', '11', 'ze', '17', '1'), ('2000', 'SP_0.4', '11', 'ze', '18', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [73]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.047.001.C", "Word_Datei": "800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc", "Excelzeile": 73, "Excel_Artikel": "SE_11/18_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.047.002", "Word_Datei": "800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc", "Excelzeile": 73, "Excel_Artikel": "SE_11/18_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.047.001.C"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc
+Referenz: 800.047.002
+Suchschluessel: [('2000', 'SP_0.4', '11', 'ze', '17', '2'), ('2000', 'SP_0.4', '11', 'ze', '18', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [73]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.047.001.C", "Word_Datei": "800-047-001_Abfuelluebersicht_K2000_SS04_R11_H17_L1_Standard.doc", "Excelzeile": 73, "Excel_Artikel": "SE_11/18_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.047.002", "Word_Datei": "800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc", "Excelzeile": 73, "Excel_Artikel": "SE_11/18_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.047.002"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc
+Referenz: 800.047.002
+Suchschluessel: [('2000', 'SP_0.4', '11', 'ze', '17', '2'), ('2000', 'SP_0.4', '11', 'ze', '18', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [51]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.047.002", "Word_Datei": "800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc", "Excelzeile": 51, "Excel_Artikel": "HK_11/17_ze_L2_W_88_D_2.7_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.539.002", "Word_Datei": "800-539-002_Abfuelluebersicht_K2000_SS04_L2_Insert.doc", "Excelzeile": 51, "Excel_Artikel": "HK_11/17_ze_L2_W_88_D_2.7_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.047.002"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-539-002_Abfuelluebersicht_K2000_SS04_L2_Insert.doc
+Referenz: 800.539.002
+Suchschluessel: [('2000', 'SP_0.4', '11', 'ze', '17', '2'), ('2000', 'SP_0.4', '11', 'ze', '16.4', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [51]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.047.002", "Word_Datei": "800-047-002_Abfuelluebersicht_K2000_SS04_R11_H17_L2_Standard.doc", "Excelzeile": 51, "Excel_Artikel": "HK_11/17_ze_L2_W_88_D_2.7_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.539.002", "Word_Datei": "800-539-002_Abfuelluebersicht_K2000_SS04_L2_Insert.doc", "Excelzeile": 51, "Excel_Artikel": "HK_11/17_ze_L2_W_88_D_2.7_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-539-002_Abfuelluebersicht_K2000_SS04_L2_Insert.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "11",
+  "Hulsen-diam": "17 / 16.4 Insert",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.539.002"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-048-001_Abfuelluebersicht_K2000_SS04_R12ze_H18_L1_Standard.doc
+Referenz: 800.048.001.D
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ze', '18', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [75]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.048.001.D", "Word_Datei": "800-048-001_Abfuelluebersicht_K2000_SS04_R12ze_H18_L1_Standard.doc", "Excelzeile": 75, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.048.002.A", "Word_Datei": "800-048-002_Abfuelluebersicht_K2000_SS04_R12ze_H18_L2_Standard.doc", "Excelzeile": 75, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-048-001_Abfuelluebersicht_K2000_SS04_R12ze_H18_L1_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.048.001.D"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-048-002_Abfuelluebersicht_K2000_SS04_R12ze_H18_L2_Standard.doc
+Referenz: 800.048.002.A
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ze', '18', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [75]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.048.001.D", "Word_Datei": "800-048-001_Abfuelluebersicht_K2000_SS04_R12ze_H18_L1_Standard.doc", "Excelzeile": 75, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.048.002.A", "Word_Datei": "800-048-002_Abfuelluebersicht_K2000_SS04_R12ze_H18_L2_Standard.doc", "Excelzeile": 75, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-048-002_Abfuelluebersicht_K2000_SS04_R12ze_H18_L2_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.048.002.A"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-049-001_Abfuelluebersicht_K2000_SS04_R12ex_H22_L1_Standard.doc
+Referenz: 800.049.001.D
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ex', '22', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [77]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.049.001.D", "Word_Datei": "800-049-001_Abfuelluebersicht_K2000_SS04_R12ex_H22_L1_Standard.doc", "Excelzeile": 77, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.049.002.B", "Word_Datei": "800-049-002_Abfuelluebersicht_K2000_SS04_R12ex_H22_L2_Standard.doc", "Excelzeile": 77, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-049-001_Abfuelluebersicht_K2000_SS04_R12ex_H22_L1_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.049.001.D"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-049-002_Abfuelluebersicht_K2000_SS04_R12ex_H22_L2_Standard.doc
+Referenz: 800.049.002.B
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ex', '22', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [77]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.049.001.D", "Word_Datei": "800-049-001_Abfuelluebersicht_K2000_SS04_R12ex_H22_L1_Standard.doc", "Excelzeile": 77, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.049.002.B", "Word_Datei": "800-049-002_Abfuelluebersicht_K2000_SS04_R12ex_H22_L2_Standard.doc", "Excelzeile": 77, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-049-002_Abfuelluebersicht_K2000_SS04_R12ex_H22_L2_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.049.002.B"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-050-001_Abfuelluebersicht_K2000_SS04_R12ze_H27_L1_Standard.doc
+Referenz: 800.050.001.B
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ze', '27', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [79]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.050.001.B", "Word_Datei": "800-050-001_Abfuelluebersicht_K2000_SS04_R12ze_H27_L1_Standard.doc", "Excelzeile": 79, "Excel_Artikel": "SE_12/27_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.050.002", "Word_Datei": "800-050-002_Abfuelluebersicht_K2000_SS04_R12ze_H27_L2_Standard.doc", "Excelzeile": 79, "Excel_Artikel": "SE_12/27_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-050-001_Abfuelluebersicht_K2000_SS04_R12ze_H27_L1_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.050.001.B"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-050-002_Abfuelluebersicht_K2000_SS04_R12ze_H27_L2_Standard.doc
+Referenz: 800.050.002
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ze', '27', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [79]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.050.001.B", "Word_Datei": "800-050-001_Abfuelluebersicht_K2000_SS04_R12ze_H27_L1_Standard.doc", "Excelzeile": 79, "Excel_Artikel": "SE_12/27_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.050.002", "Word_Datei": "800-050-002_Abfuelluebersicht_K2000_SS04_R12ze_H27_L2_Standard.doc", "Excelzeile": 79, "Excel_Artikel": "SE_12/27_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-050-002_Abfuelluebersicht_K2000_SS04_R12ze_H27_L2_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "27",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.050.002"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-051-001_Abfuelluebersicht_K2000_SS04_R12ze_H29_L1_Standard.doc
+Referenz: 800.051.001.B
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ze', '29', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [81]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.051.001.B", "Word_Datei": "800-051-001_Abfuelluebersicht_K2000_SS04_R12ze_H29_L1_Standard.doc", "Excelzeile": 81, "Excel_Artikel": "SE_12/29_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.051.002", "Word_Datei": "800-051-002_Abfuelluebersicht_K2000_SS04_R12ze_H29_L2_Standard.doc", "Excelzeile": 81, "Excel_Artikel": "SE_12/29_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-051-001_Abfuelluebersicht_K2000_SS04_R12ze_H29_L1_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.051.001.B"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-051-002_Abfuelluebersicht_K2000_SS04_R12ze_H29_L2_Standard.doc
+Referenz: 800.051.002
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ze', '29', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [81]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.051.001.B", "Word_Datei": "800-051-001_Abfuelluebersicht_K2000_SS04_R12ze_H29_L1_Standard.doc", "Excelzeile": 81, "Excel_Artikel": "SE_12/29_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.051.002", "Word_Datei": "800-051-002_Abfuelluebersicht_K2000_SS04_R12ze_H29_L2_Standard.doc", "Excelzeile": 81, "Excel_Artikel": "SE_12/29_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-051-002_Abfuelluebersicht_K2000_SS04_R12ze_H29_L2_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.051.002"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-060-001_Abfuelluebersicht_K3000_R12ze_H18_L1_Standard.doc
+Referenz: 800.060.001.F
+Suchschluessel: [('3000', 'STANDARD', '12', 'ze', '18', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [143]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.060.001.F", "Word_Datei": "800-060-001_Abfuelluebersicht_K3000_R12ze_H18_L1_Standard.doc", "Excelzeile": 143, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_76_RHOM_3000"}, {"Referenz_zu_Abfullnorm": "800.060.002.C", "Word_Datei": "800-060-002_Abfuelluebersicht_K3000_R12ze_H18_L2_Standard.doc", "Excelzeile": 143, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_76_RHOM_3000"}]
+Word_Daten:
+{
+  "Datei": "800-060-001_Abfuelluebersicht_K3000_R12ze_H18_L1_Standard.doc",
+  "System": "3000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.060.001.F"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-060-002_Abfuelluebersicht_K3000_R12ze_H18_L2_Standard.doc
+Referenz: 800.060.002.C
+Suchschluessel: [('3000', 'STANDARD', '12', 'ze', '18', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [143]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.060.001.F", "Word_Datei": "800-060-001_Abfuelluebersicht_K3000_R12ze_H18_L1_Standard.doc", "Excelzeile": 143, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_76_RHOM_3000"}, {"Referenz_zu_Abfullnorm": "800.060.002.C", "Word_Datei": "800-060-002_Abfuelluebersicht_K3000_R12ze_H18_L2_Standard.doc", "Excelzeile": 143, "Excel_Artikel": "SE_12/18_ze_L1/L2_S_76_RHOM_3000"}]
+Word_Daten:
+{
+  "Datei": "800-060-002_Abfuelluebersicht_K3000_R12ze_H18_L2_Standard.doc",
+  "System": "3000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "18",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.060.002.C"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-061-001_Abfuelluebersicht_K3000_R12ex_H22_L1_Standard.doc
+Referenz: 800.061.001.F
+Suchschluessel: [('3000', 'STANDARD', '12', 'ex', '22', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [146]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.061.001.F", "Word_Datei": "800-061-001_Abfuelluebersicht_K3000_R12ex_H22_L1_Standard.doc", "Excelzeile": 146, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_76_RHOM_3000"}, {"Referenz_zu_Abfullnorm": "800.061.002.D", "Word_Datei": "800-061-002_Abfuelluebersicht_K3000_R12ex_H22_L2_Standard.doc", "Excelzeile": 146, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_76_RHOM_3000"}]
+Word_Daten:
+{
+  "Datei": "800-061-001_Abfuelluebersicht_K3000_R12ex_H22_L1_Standard.doc",
+  "System": "3000",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.061.001.F"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-061-002_Abfuelluebersicht_K3000_R12ex_H22_L2_Standard.doc
+Referenz: 800.061.002.D
+Suchschluessel: [('3000', 'STANDARD', '12', 'ex', '22', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [146]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.061.001.F", "Word_Datei": "800-061-001_Abfuelluebersicht_K3000_R12ex_H22_L1_Standard.doc", "Excelzeile": 146, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_76_RHOM_3000"}, {"Referenz_zu_Abfullnorm": "800.061.002.D", "Word_Datei": "800-061-002_Abfuelluebersicht_K3000_R12ex_H22_L2_Standard.doc", "Excelzeile": 146, "Excel_Artikel": "SE_12/22_ex_L1/L2_S_76_RHOM_3000"}]
+Word_Daten:
+{
+  "Datei": "800-061-002_Abfuelluebersicht_K3000_R12ex_H22_L2_Standard.doc",
+  "System": "3000",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.061.002.D"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-198-001_Abfuelluebersicht_K2000S_R12ze_H22_L1_ABS.doc
+Referenz: 800.198.001.F
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '22', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [121]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.198.001.F", "Word_Datei": "800-198-001_Abfuelluebersicht_K2000S_R12ze_H22_L1_ABS.doc", "Excelzeile": 121, "Excel_Artikel": "HK_12/22_ze_L1_W_83_D_2.7_spez_OM1"}, {"Referenz_zu_Abfullnorm": "800.208.001.J", "Word_Datei": "800-208-001_Abfuelluebersicht_K2000S_R12ze_H22_L1_Standard.doc", "Excelzeile": 121, "Excel_Artikel": "HK_12/22_ze_L1_W_83_D_2.7_spez_OM1"}]
+Word_Daten:
+{
+  "Datei": "800-198-001_Abfuelluebersicht_K2000S_R12ze_H22_L1_ABS.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "ABS",
+  "Referenz_zu_Abfullnorm": "800.198.001.F"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-208-001_Abfuelluebersicht_K2000S_R12ze_H22_L1_Standard.doc
+Referenz: 800.208.001.J
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '22', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [121]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.198.001.F", "Word_Datei": "800-198-001_Abfuelluebersicht_K2000S_R12ze_H22_L1_ABS.doc", "Excelzeile": 121, "Excel_Artikel": "HK_12/22_ze_L1_W_83_D_2.7_spez_OM1"}, {"Referenz_zu_Abfullnorm": "800.208.001.J", "Word_Datei": "800-208-001_Abfuelluebersicht_K2000S_R12ze_H22_L1_Standard.doc", "Excelzeile": 121, "Excel_Artikel": "HK_12/22_ze_L1_W_83_D_2.7_spez_OM1"}]
+Word_Daten:
+{
+  "Datei": "800-208-001_Abfuelluebersicht_K2000S_R12ze_H22_L1_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.208.001.J"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-216-001_Abfuelluebersicht_K1000S_R12ze_H22_L1_Standard.doc
+Referenz: 800.216.001.F
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ze', '22', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [46]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.216.001.F", "Word_Datei": "800-216-001_Abfuelluebersicht_K1000S_R12ze_H22_L1_Standard.doc", "Excelzeile": 46, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_83_RHOM"}, {"Referenz_zu_Abfullnorm": "800.216.002.F", "Word_Datei": "800-216-002_Abfuelluebersicht_K1000S_R12ze_H22_L2_Standard.doc", "Excelzeile": 46, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_83_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-216-001_Abfuelluebersicht_K1000S_R12ze_H22_L1_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.216.001.F"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-216-002_Abfuelluebersicht_K1000S_R12ze_H22_L2_Standard.doc
+Referenz: 800.216.002.F
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ze', '22', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [46]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.216.001.F", "Word_Datei": "800-216-001_Abfuelluebersicht_K1000S_R12ze_H22_L1_Standard.doc", "Excelzeile": 46, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_83_RHOM"}, {"Referenz_zu_Abfullnorm": "800.216.002.F", "Word_Datei": "800-216-002_Abfuelluebersicht_K1000S_R12ze_H22_L2_Standard.doc", "Excelzeile": 46, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_83_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-216-002_Abfuelluebersicht_K1000S_R12ze_H22_L2_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.216.002.F"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-235-001_Abfuelluebersicht_K2000S_R12ze_H20_L1_Standard.doc
+Referenz: 800.235.001.F
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '20', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [124]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.235.001.F", "Word_Datei": "800-235-001_Abfuelluebersicht_K2000S_R12ze_H20_L1_Standard.doc", "Excelzeile": 124, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.235.002.F", "Word_Datei": "800-235-002_Abfuelluebersicht_K2000S_R12ze_H20_L2_Standard.doc", "Excelzeile": 124, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_83"}]
+Word_Daten:
+{
+  "Datei": "800-235-001_Abfuelluebersicht_K2000S_R12ze_H20_L1_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.235.001.F"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-235-002_Abfuelluebersicht_K2000S_R12ze_H20_L2_Standard.doc
+Referenz: 800.235.002.F
+Suchschluessel: [('2000S', 'STANDARD', '12', 'ze', '20', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [124]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.235.001.F", "Word_Datei": "800-235-001_Abfuelluebersicht_K2000S_R12ze_H20_L1_Standard.doc", "Excelzeile": 124, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_83"}, {"Referenz_zu_Abfullnorm": "800.235.002.F", "Word_Datei": "800-235-002_Abfuelluebersicht_K2000S_R12ze_H20_L2_Standard.doc", "Excelzeile": 124, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_83"}]
+Word_Daten:
+{
+  "Datei": "800-235-002_Abfuelluebersicht_K2000S_R12ze_H20_L2_Standard.doc",
+  "System": "2000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.235.002.F"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-269-001_Abfuelluebersicht_K2000_SS04_R12ze_H20_L1_Standard.doc
+Referenz: 800.269.001.B
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ze', '20', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [76]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.269.001.B", "Word_Datei": "800-269-001_Abfuelluebersicht_K2000_SS04_R12ze_H20_L1_Standard.doc", "Excelzeile": 76, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.269.002.B", "Word_Datei": "800-269-002_Abfuelluebersicht_K2000_SS04_R12ze_H20_L2_Standard.doc", "Excelzeile": 76, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-269-001_Abfuelluebersicht_K2000_SS04_R12ze_H20_L1_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.269.001.B"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-269-002_Abfuelluebersicht_K2000_SS04_R12ze_H20_L2_Standard.doc
+Referenz: 800.269.002.B
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ze', '20', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [76]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.269.001.B", "Word_Datei": "800-269-001_Abfuelluebersicht_K2000_SS04_R12ze_H20_L1_Standard.doc", "Excelzeile": 76, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.269.002.B", "Word_Datei": "800-269-002_Abfuelluebersicht_K2000_SS04_R12ze_H20_L2_Standard.doc", "Excelzeile": 76, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-269-002_Abfuelluebersicht_K2000_SS04_R12ze_H20_L2_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.269.002.B"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-270-001_Abfuelluebersicht_K2000_SS04_R12ze_H22_L1_Standard.doc
+Referenz: 800.270.001.B
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ze', '22', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [78]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.270.001.B", "Word_Datei": "800-270-001_Abfuelluebersicht_K2000_SS04_R12ze_H22_L1_Standard.doc", "Excelzeile": 78, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.270.002.B", "Word_Datei": "800-270-002_Abfuelluebersicht_K2000_SS04_R12ze_H22_L2_Standard.doc", "Excelzeile": 78, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-270-001_Abfuelluebersicht_K2000_SS04_R12ze_H22_L1_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.270.001.B"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-270-002_Abfuelluebersicht_K2000_SS04_R12ze_H22_L2_Standard.doc
+Referenz: 800.270.002.B
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ze', '22', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [78]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.270.001.B", "Word_Datei": "800-270-001_Abfuelluebersicht_K2000_SS04_R12ze_H22_L1_Standard.doc", "Excelzeile": 78, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.270.002.B", "Word_Datei": "800-270-002_Abfuelluebersicht_K2000_SS04_R12ze_H22_L2_Standard.doc", "Excelzeile": 78, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-270-002_Abfuelluebersicht_K2000_SS04_R12ze_H22_L2_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.270.002.B"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-271-001_Abfuelluebersicht_K2000_SS04_R12ex_H29_L1_Standard.doc
+Referenz: 800.271.001
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ex', '29', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [80]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.271.001", "Word_Datei": "800-271-001_Abfuelluebersicht_K2000_SS04_R12ex_H29_L1_Standard.doc", "Excelzeile": 80, "Excel_Artikel": "SE_12/29_ex_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.271.002", "Word_Datei": "800-271-002_Abfuelluebersicht_K2000_SS04_R12ex_H29_L2_Standard.doc", "Excelzeile": 80, "Excel_Artikel": "SE_12/29_ex_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-271-001_Abfuelluebersicht_K2000_SS04_R12ex_H29_L1_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.271.001"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-271-002_Abfuelluebersicht_K2000_SS04_R12ex_H29_L2_Standard.doc
+Referenz: 800.271.002
+Suchschluessel: [('2000', 'SP_0.4', '12', 'ex', '29', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [80]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.271.001", "Word_Datei": "800-271-001_Abfuelluebersicht_K2000_SS04_R12ex_H29_L1_Standard.doc", "Excelzeile": 80, "Excel_Artikel": "SE_12/29_ex_L1/L2_S_88_SP_0.4"}, {"Referenz_zu_Abfullnorm": "800.271.002", "Word_Datei": "800-271-002_Abfuelluebersicht_K2000_SS04_R12ex_H29_L2_Standard.doc", "Excelzeile": 80, "Excel_Artikel": "SE_12/29_ex_L1/L2_S_88_SP_0.4"}]
+Word_Daten:
+{
+  "Datei": "800-271-002_Abfuelluebersicht_K2000_SS04_R12ex_H29_L2_Standard.doc",
+  "System": "2000 0.4",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.271.002"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-272-001_Abfuelluebersicht_K1000S_R12ze_H20_L1_Standard.doc
+Referenz: 800.272.001.F
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ze', '20', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [44]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.272.001.F", "Word_Datei": "800-272-001_Abfuelluebersicht_K1000S_R12ze_H20_L1_Standard.doc", "Excelzeile": 44, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_83_RHOM"}, {"Referenz_zu_Abfullnorm": "800.272.002.F", "Word_Datei": "800-272-002_Abfuelluebersicht_K1000S_R12ze_H20_L2_Standard.doc", "Excelzeile": 44, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_83_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-272-001_Abfuelluebersicht_K1000S_R12ze_H20_L1_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.272.001.F"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-272-002_Abfuelluebersicht_K1000S_R12ze_H20_L2_Standard.doc
+Referenz: 800.272.002.F
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ze', '20', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [44]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.272.001.F", "Word_Datei": "800-272-001_Abfuelluebersicht_K1000S_R12ze_H20_L1_Standard.doc", "Excelzeile": 44, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_83_RHOM"}, {"Referenz_zu_Abfullnorm": "800.272.002.F", "Word_Datei": "800-272-002_Abfuelluebersicht_K1000S_R12ze_H20_L2_Standard.doc", "Excelzeile": 44, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_83_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-272-002_Abfuelluebersicht_K1000S_R12ze_H20_L2_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.272.002.F"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-276-001_Abfuelluebersicht_K1000S_R12ex_H29_L1_Standard.doc
+Referenz: 800.276.001.E
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ex', '29', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [48]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.276.001.E", "Word_Datei": "800-276-001_Abfuelluebersicht_K1000S_R12ex_H29_L1_Standard.doc", "Excelzeile": 48, "Excel_Artikel": "SE_12/29_ex_L1/L2_S_83_RHOM"}, {"Referenz_zu_Abfullnorm": "800.276.002.E", "Word_Datei": "800-276-002_Abfuelluebersicht_K1000S_R12ex_H29_L2_Standard.doc", "Excelzeile": 48, "Excel_Artikel": "SE_12/29_ex_L1/L2_S_83_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-276-001_Abfuelluebersicht_K1000S_R12ex_H29_L1_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.276.001.E"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-276-002_Abfuelluebersicht_K1000S_R12ex_H29_L2_Standard.doc
+Referenz: 800.276.002.E
+Suchschluessel: [('1000S', 'STANDARD', '12', 'ex', '29', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [48]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.276.001.E", "Word_Datei": "800-276-001_Abfuelluebersicht_K1000S_R12ex_H29_L1_Standard.doc", "Excelzeile": 48, "Excel_Artikel": "SE_12/29_ex_L1/L2_S_83_RHOM"}, {"Referenz_zu_Abfullnorm": "800.276.002.E", "Word_Datei": "800-276-002_Abfuelluebersicht_K1000S_R12ex_H29_L2_Standard.doc", "Excelzeile": 48, "Excel_Artikel": "SE_12/29_ex_L1/L2_S_83_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-276-002_Abfuelluebersicht_K1000S_R12ex_H29_L2_Standard.doc",
+  "System": "1000S",
+  "Rotor-diam": "12 exzentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.276.002.E"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-278-001_Abfuelluebersicht_K3000_R12ze_H22_L1_Standard.doc
+Referenz: 800.278.001.C
+Suchschluessel: [('3000', 'STANDARD', '12', 'ze', '22', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [147]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.278.001.C", "Word_Datei": "800-278-001_Abfuelluebersicht_K3000_R12ze_H22_L1_Standard.doc", "Excelzeile": 147, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_76_RHOM_3000"}, {"Referenz_zu_Abfullnorm": "800.278.002.C", "Word_Datei": "800-278-002_Abfuelluebersicht_K3000_R12ze_H22_L2_Standard.doc", "Excelzeile": 147, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_76_RHOM_3000"}]
+Word_Daten:
+{
+  "Datei": "800-278-001_Abfuelluebersicht_K3000_R12ze_H22_L1_Standard.doc",
+  "System": "3000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.278.001.C"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-278-002_Abfuelluebersicht_K3000_R12ze_H22_L2_Standard.doc
+Referenz: 800.278.002.C
+Suchschluessel: [('3000', 'STANDARD', '12', 'ze', '22', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [147]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.278.001.C", "Word_Datei": "800-278-001_Abfuelluebersicht_K3000_R12ze_H22_L1_Standard.doc", "Excelzeile": 147, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_76_RHOM_3000"}, {"Referenz_zu_Abfullnorm": "800.278.002.C", "Word_Datei": "800-278-002_Abfuelluebersicht_K3000_R12ze_H22_L2_Standard.doc", "Excelzeile": 147, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_76_RHOM_3000"}]
+Word_Daten:
+{
+  "Datei": "800-278-002_Abfuelluebersicht_K3000_R12ze_H22_L2_Standard.doc",
+  "System": "3000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.278.002.C"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-281-001_Abfuelluebersicht_K3000_R12ze_H20_L1_Standard.doc
+Referenz: 800.281.001.C
+Suchschluessel: [('3000', 'STANDARD', '12', 'ze', '20', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [145]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.281.001.C", "Word_Datei": "800-281-001_Abfuelluebersicht_K3000_R12ze_H20_L1_Standard.doc", "Excelzeile": 145, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_76_RHOM_3000"}, {"Referenz_zu_Abfullnorm": "800.281.002.C", "Word_Datei": "800-281-002_Abfuelluebersicht_K3000_R12ze_H20_L2_Standard.doc", "Excelzeile": 145, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_76_RHOM_3000"}]
+Word_Daten:
+{
+  "Datei": "800-281-001_Abfuelluebersicht_K3000_R12ze_H20_L1_Standard.doc",
+  "System": "3000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.281.001.C"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-281-002_Abfuelluebersicht_K3000_R12ze_H20_L2_Standard.doc
+Referenz: 800.281.002.C
+Suchschluessel: [('3000', 'STANDARD', '12', 'ze', '20', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [145]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.281.001.C", "Word_Datei": "800-281-001_Abfuelluebersicht_K3000_R12ze_H20_L1_Standard.doc", "Excelzeile": 145, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_76_RHOM_3000"}, {"Referenz_zu_Abfullnorm": "800.281.002.C", "Word_Datei": "800-281-002_Abfuelluebersicht_K3000_R12ze_H20_L2_Standard.doc", "Excelzeile": 145, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_76_RHOM_3000"}]
+Word_Daten:
+{
+  "Datei": "800-281-002_Abfuelluebersicht_K3000_R12ze_H20_L2_Standard.doc",
+  "System": "3000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.281.002.C"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-288-001_Abfuelluebersicht_K1000_R12ze_H20_L1_Standard.doc
+Referenz: 800.288.001.B
+Suchschluessel: [('1000', 'STANDARD', '12', 'ze', '20', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [25]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.288.001.B", "Word_Datei": "800-288-001_Abfuelluebersicht_K1000_R12ze_H20_L1_Standard.doc", "Excelzeile": 25, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_88_RHOM"}, {"Referenz_zu_Abfullnorm": "800.288.002.B", "Word_Datei": "800-288-002_Abfuelluebersicht_K1000_R12ze_H20_L2_Standard.doc", "Excelzeile": 25, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_88_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-288-001_Abfuelluebersicht_K1000_R12ze_H20_L1_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.288.001.B"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-288-002_Abfuelluebersicht_K1000_R12ze_H20_L2_Standard.doc
+Referenz: 800.288.002.B
+Suchschluessel: [('1000', 'STANDARD', '12', 'ze', '20', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [25]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.288.001.B", "Word_Datei": "800-288-001_Abfuelluebersicht_K1000_R12ze_H20_L1_Standard.doc", "Excelzeile": 25, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_88_RHOM"}, {"Referenz_zu_Abfullnorm": "800.288.002.B", "Word_Datei": "800-288-002_Abfuelluebersicht_K1000_R12ze_H20_L2_Standard.doc", "Excelzeile": 25, "Excel_Artikel": "SE_12/20_ze_L1/L2_S_88_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-288-002_Abfuelluebersicht_K1000_R12ze_H20_L2_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "20",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.288.002.B"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-289-001_Abfuelluebersicht_K1000_R12ze_H22_L1_Standard.doc
+Referenz: 800.289.001.B
+Suchschluessel: [('1000', 'STANDARD', '12', 'ze', '22', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [19]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.289.001.B", "Word_Datei": "800-289-001_Abfuelluebersicht_K1000_R12ze_H22_L1_Standard.doc", "Excelzeile": 19, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_88_RHOM"}, {"Referenz_zu_Abfullnorm": "800.289.002.B", "Word_Datei": "800-289-002_Abfuelluebersicht_K1000_R12ze_H22_L2_Standard.doc", "Excelzeile": 19, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_88_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-289-001_Abfuelluebersicht_K1000_R12ze_H22_L1_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.289.001.B"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-289-002_Abfuelluebersicht_K1000_R12ze_H22_L2_Standard.doc
+Referenz: 800.289.002.B
+Suchschluessel: [('1000', 'STANDARD', '12', 'ze', '22', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [19]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.289.001.B", "Word_Datei": "800-289-001_Abfuelluebersicht_K1000_R12ze_H22_L1_Standard.doc", "Excelzeile": 19, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_88_RHOM"}, {"Referenz_zu_Abfullnorm": "800.289.002.B", "Word_Datei": "800-289-002_Abfuelluebersicht_K1000_R12ze_H22_L2_Standard.doc", "Excelzeile": 19, "Excel_Artikel": "SE_12/22_ze_L1/L2_S_88_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-289-002_Abfuelluebersicht_K1000_R12ze_H22_L2_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "22",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.289.002.B"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-290-001_Abfuelluebersicht_K1000_R12ze_H29_L1_Standard.doc
+Referenz: 800.290.001.A
+Suchschluessel: [('1000', 'STANDARD', '12', 'ze', '29', '1')]
+Anzahl Treffer: 1
+Trefferzeilen: [22]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.290.001.A", "Word_Datei": "800-290-001_Abfuelluebersicht_K1000_R12ze_H29_L1_Standard.doc", "Excelzeile": 22, "Excel_Artikel": "SE_12/29_ze_L1/L2_S_88_RHOM"}, {"Referenz_zu_Abfullnorm": "800.290.002.A", "Word_Datei": "800-290-002_Abfuelluebersicht_K1000_R12ze_H29_L2_Standard.doc", "Excelzeile": 22, "Excel_Artikel": "SE_12/29_ze_L1/L2_S_88_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-290-001_Abfuelluebersicht_K1000_R12ze_H29_L1_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "1",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.290.001.A"
+}
+
+Grund: Excelzeile mehrdeutig: mehrere Referenzen
+Word-Datei: 800-290-002_Abfuelluebersicht_K1000_R12ze_H29_L2_Standard.doc
+Referenz: 800.290.002.A
+Suchschluessel: [('1000', 'STANDARD', '12', 'ze', '29', '2')]
+Anzahl Treffer: 1
+Trefferzeilen: [22]
+Fehler: [{"Referenz_zu_Abfullnorm": "800.290.001.A", "Word_Datei": "800-290-001_Abfuelluebersicht_K1000_R12ze_H29_L1_Standard.doc", "Excelzeile": 22, "Excel_Artikel": "SE_12/29_ze_L1/L2_S_88_RHOM"}, {"Referenz_zu_Abfullnorm": "800.290.002.A", "Word_Datei": "800-290-002_Abfuelluebersicht_K1000_R12ze_H29_L2_Standard.doc", "Excelzeile": 22, "Excel_Artikel": "SE_12/29_ze_L1/L2_S_88_RHOM"}]
+Word_Daten:
+{
+  "Datei": "800-290-002_Abfuelluebersicht_K1000_R12ze_H29_L2_Standard.doc",
+  "System": "1000",
+  "Rotor-diam": "12 zentrisch",
+  "Hulsen-diam": "29",
+  "Linie": "2",
+  "Linie_Quelle": "Dokument",
+  "Funktion": "Standard",
+  "Referenz_zu_Abfullnorm": "800.290.002.A"
+}

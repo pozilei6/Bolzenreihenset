@@ -1,0 +1,987 @@
+Diagnose nicht gematchte Bolzenreihensets
+==========================================
+
+Stand: nach aktueller main.py-Logik. FP2 mit Linie "-" wird bereits linienneutral als L1/L2 behandelt.
+
+Word-Dateien geladen: 185
+Für Berechnungscode/Bolzen verwendete Word-Dateien: 75
+Nicht verwendet wegen unvollstaendigem Match-Key: 15
+Nicht verwendet trotz vollstaendigem Match-Key und HK/SE-Zeilen: 95
+Nicht verwendet ohne HK/SE-Zeilen: 0
+
+A) Unvollstaendiger Match-Key
+-----------------------------
+Datei: 800-333_Abfuelluebersicht_K5000_Standard.doc
+  Fehler: Cannot parse Hulsen-diam: -
+  HK/SE-Zeilen: 0/5
+  Gelesen: System='5000'; Variante='STANDARD'; Rotor='8.5'; Huelse='-'; Linie='1'; Funktion='Standard'
+
+Datei: 800-437_Abfuelluebersicht_K4000S_R14ze_H28_Parkeon_3-Bohrreihen.docx
+  Fehler: Linie fehlt
+  HK/SE-Zeilen: 10/0
+  Gelesen: System='4000S'; Variante='STANDARD'; Rotor='14 ze'; Huelse='28'; Linie=None; Funktion=None
+
+Datei: 800-447_Abfuelluebersicht_K4000S_R14ze_H28_Parkeon_2-Bohrreihen.docx
+  Fehler: Linie fehlt
+  HK/SE-Zeilen: 7/0
+  Gelesen: System='4000S'; Variante='STANDARD'; Rotor='14 ze'; Huelse='28'; Linie=None; Funktion=None
+
+Datei: 800-472-001_Abfuelluebersicht_K8000_L1_Insert.doc
+  Fehler: Rotor-diam fehlt
+  HK/SE-Zeilen: 4/10
+  Gelesen: System='8000\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00©\x032'; Variante='STANDARD'; Rotor=None; Huelse=None; Linie='1'; Funktion=None
+
+Datei: 800-472-002_Abfuelluebersicht_K8000_L2_Insert.doc
+  Fehler: Rotor-diam fehlt
+  HK/SE-Zeilen: 4/11
+  Gelesen: System='8000\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00©\x032'; Variante='STANDARD'; Rotor=None; Huelse=None; Linie='2'; Funktion=None
+
+Datei: 800-627-001_Abfuelluebersicht_K8000_OM3_R11_L1.docx
+  Fehler: Hulsen-diam fehlt
+  HK/SE-Zeilen: 15/0
+  Gelesen: System='8000'; Variante='OM3'; Rotor='11'; Huelse=None; Linie='1'; Funktion=None
+
+Datei: 800-627-002_Abfuelluebersicht_K8000_OM3_R11_L2.docx
+  Fehler: Hulsen-diam fehlt
+  HK/SE-Zeilen: 16/0
+  Gelesen: System='8000'; Variante='OM3'; Rotor='11'; Huelse=None; Linie='2'; Funktion=None
+
+Datei: 800.561.001_Abfuelluebersicht_K9000_L1_Insert.doc
+  Fehler: Rotor-diam fehlt
+  HK/SE-Zeilen: 2/7
+  Gelesen: System='9000\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00©\x032'; Variante='STANDARD'; Rotor=None; Huelse=None; Linie='1'; Funktion=None
+
+Datei: 800.561.002_Abfuelluebersicht_K9000_L2_Insert.doc
+  Fehler: Rotor-diam fehlt
+  HK/SE-Zeilen: 2/7
+  Gelesen: System='9000\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00©\x032'; Variante='STANDARD'; Rotor=None; Huelse=None; Linie='2'; Funktion=None
+
+Datei: 800.577.001_Abfüllübersicht K9000.doc
+  Fehler: Rotor-diam fehlt
+  HK/SE-Zeilen: 2/7
+  Gelesen: System='9000'; Variante='STANDARD'; Rotor=None; Huelse=None; Linie=None; Funktion=None
+
+Datei: 800.577.002_Abfüllübersicht K9000.doc
+  Fehler: Rotor-diam fehlt
+  HK/SE-Zeilen: 2/7
+  Gelesen: System='9000'; Variante='STANDARD'; Rotor=None; Huelse=None; Linie=None; Funktion=None
+
+Datei: 800.581.001_Abfüllübersicht K9000 centric Standard.docx
+  Fehler: Rotor-diam fehlt
+  HK/SE-Zeilen: 9/0
+  Gelesen: System='9000'; Variante='STANDARD'; Rotor=None; Huelse=None; Linie=None; Funktion=None
+
+Datei: 800.581.002_Abfüllübersicht K9000 centric Standard.docx
+  Fehler: Rotor-diam fehlt
+  HK/SE-Zeilen: 9/0
+  Gelesen: System='9000'; Variante='STANDARD'; Rotor=None; Huelse=None; Linie=None; Funktion=None
+
+Datei: 800.597_Filling norm Flowbird K8000 Omega2 3 lines.docx
+  Fehler: Rotor-diam fehlt
+  HK/SE-Zeilen: 9/0
+  Gelesen: System='8000'; Variante='OM2'; Rotor=None; Huelse=None; Linie=None; Funktion=None
+
+Datei: 800.598_Filling norm Flowbird K8000 Omega2 2 lines.docx
+  Fehler: Rotor-diam fehlt
+  HK/SE-Zeilen: 6/0
+  Gelesen: System='8000'; Variante='OM2'; Rotor=None; Huelse=None; Linie=None; Funktion=None
+
+
+B) Vollstaendiger Match-Key, aber kein exaktes Bolzenreihenset im Excel
+-----------------------------------------------------------------------
+Datei: 800-014-001_Abfuelluebersicht_K2000S_R12ex_H22_L1_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='22'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ex', '22', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 121: 2000S Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze
+    Excelzeile 115: 2000S Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=22 Excel=18
+    Excelzeile 118: 2000S Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=22 Excel=20
+    Excelzeile 120: 2000S Grundausführung | HK_12/22_ex_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Linie: Word=1 Excel=2
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=22 Excel=20
+
+Datei: 800-014-002_Abfuelluebersicht_K2000S_R12ex_H22_L2_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='22'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ex', '22', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 120: 2000S Grundausführung | HK_12/22_ex_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5
+    Excelzeile 108: 2000S ChangeCode / Vario Ausführung | HK_12/22_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; ze/ex: Word=ex Excel=ze
+    Excelzeile 110: 2000S ChangeCode / Vario Ausführung | HK_12/29_ex_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=22 Excel=29
+    Excelzeile 121: 2000S Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze; Linie: Word=2 Excel=1
+    Excelzeile 122: 2000S Grundausführung | HK_12/22_ze_L2_W_83_D_2.7_LV_0.5_spez_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; ze/ex: Word=ex Excel=ze
+
+Datei: 800-029-001_Abfuelluebersicht_K1000S_R12ze_H27_L1_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='1000S'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='27'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('1000S', 'STANDARD', '12', 'ze', '27', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 26: 1000S Grundausführung | HK_12/17_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=17
+    Excelzeile 28: 1000S Grundausführung | HK_12/18_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=18
+    Excelzeile 30: 1000S Grundausführung | HK_12/20_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=20
+    Excelzeile 34: 1000S Grundausführung | HK_12/22_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=22
+    Excelzeile 36: 1000S Grundausführung | HK_12/23_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=23
+
+Datei: 800-029-002_Abfuelluebersicht_K1000S_R12ze_H27_L2_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='1000S'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='27'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('1000S', 'STANDARD', '12', 'ze', '27', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 27: 1000S Grundausführung | HK_12/17_ze_L2_W_76_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=17
+    Excelzeile 29: 1000S Grundausführung | HK_12/18_ze_L2_W_76_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=18
+    Excelzeile 31: 1000S Grundausführung | HK_12/20_ze_L2_W_76_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=20
+    Excelzeile 35: 1000S Grundausführung | HK_12/22_ze_L2_W_76_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=22
+    Excelzeile 37: 1000S Grundausführung | HK_12/23_ze_L2_W_76_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=23
+
+Datei: 800-045-001_Abfuelluebersicht_K1000_R12ze_H27_L1_Standard.doc
+  HK/SE-Zeilen: 5/6
+  Gelesen: System='1000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='27'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('1000', 'STANDARD', '12', 'ze', '27', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 2: 1000 4er - Teilung | HK_12/17_ze_L1_W_78_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=17
+    Excelzeile 4: 1000 4er - Teilung | HK_12/18_ze_L1_W_78_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=18
+    Excelzeile 8: 1000 4er - Teilung | HK_12/22_ze_L1_W_78_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=22
+    Excelzeile 10: 1000 4er - Teilung | HK_12/23_ze_L1_W_78_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=23
+    Excelzeile 14: 1000 4er - Teilung | HK_12/29_ze_L1_W_78_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=29
+
+Datei: 800-045-002_Abfuelluebersicht_K1000_R12ze_H27_L2_Standard.doc
+  HK/SE-Zeilen: 5/6
+  Gelesen: System='1000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='27'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('1000', 'STANDARD', '12', 'ze', '27', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 3: 1000 4er - Teilung | HK_12/17_ze_L2_W_78_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=17
+    Excelzeile 5: 1000 4er - Teilung | HK_12/18_ze_L2_W_78_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=18
+    Excelzeile 9: 1000 4er - Teilung | HK_12/22_ze_L2_W_78_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=22
+    Excelzeile 11: 1000 4er - Teilung | HK_12/23_ze_L2_W_78_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=23
+    Excelzeile 15: 1000 4er - Teilung | HK_12/29_ze_L2_W_78_D_2.4_RHOM | Unterschiede: Huelse: Word=27 Excel=29
+
+Datei: 800-053-001_Abfuelluebersicht_K2000_SS05_R12ze_H18_L1_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 zentrisch'; Huelse='18'; Linie='1'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ze', '18', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 56: 2000 Bolzenhöhe 0.4 | HK_12/18_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 75: 2000 Bolzenhöhe 0.4 | SE_12/18_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 84: 2000 Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 99: 2000 Grundausführung | SE_12/18_ze_L1/L2_S_83 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 52: 2000 Bolzenhöhe 0.4 | HK_11/18_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Rotor: Word=12 Excel=11
+
+Datei: 800-053-002_Abfuelluebersicht_K2000_SS05_R12ze_H18_L2_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 zentrisch'; Huelse='18'; Linie='2'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ze', '18', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 57: 2000 Bolzenhöhe 0.4 | HK_12/18_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 75: 2000 Bolzenhöhe 0.4 | SE_12/18_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 85: 2000 Grundausführung | HK_12/18_ze_L2_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 99: 2000 Grundausführung | SE_12/18_ze_L1/L2_S_83 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 53: 2000 Bolzenhöhe 0.4 | HK_11/18_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Rotor: Word=12 Excel=11
+
+Datei: 800-054-001_Abfuelluebersicht_K2000_SS05_R12ex_H22_L1_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 exzentrisch'; Huelse='22'; Linie='1'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ex', '22', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 60: 2000 Bolzenhöhe 0.4 | HK_12/22_ex_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 77: 2000 Bolzenhöhe 0.4 | SE_12/22_ex_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 87: 2000 Grundausführung | HK_12/22_ex_L1_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 100: 2000 Grundausführung | SE_12/22_ex_L1/L2_S_83 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 61: 2000 Bolzenhöhe 0.4 | HK_12/22_ex_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Linie: Word=1 Excel=2
+
+Datei: 800-054-002_Abfuelluebersicht_K2000_SS05_R12ex_H22_L2_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 exzentrisch'; Huelse='22'; Linie='2'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ex', '22', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 61: 2000 Bolzenhöhe 0.4 | HK_12/22_ex_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 77: 2000 Bolzenhöhe 0.4 | SE_12/22_ex_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 88: 2000 Grundausführung | HK_12/22_ex_L2_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 100: 2000 Grundausführung | SE_12/22_ex_L1/L2_S_83 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 60: 2000 Bolzenhöhe 0.4 | HK_12/22_ex_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Linie: Word=2 Excel=1
+
+Datei: 800-055-001_Abfuelluebersicht_K2000_SS05_R12ze_H27_L1_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 zentrisch'; Huelse='27'; Linie='1'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ze', '27', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 64: 2000 Bolzenhöhe 0.4 | HK_12/27_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 79: 2000 Bolzenhöhe 0.4 | SE_12/27_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 91: 2000 Grundausführung | HK_12/27_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 102: 2000 Grundausführung | SE_12/27_ze_L1/L2_S_83 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 54: 2000 Bolzenhöhe 0.4 | HK_11/27_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Rotor: Word=12 Excel=11
+
+Datei: 800-055-002_Abfuelluebersicht_K2000_SS05_R12ze_H27_L2_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 zentrisch'; Huelse='27'; Linie='2'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ze', '27', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 65: 2000 Bolzenhöhe 0.4 | HK_12/27_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 79: 2000 Bolzenhöhe 0.4 | SE_12/27_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 92: 2000 Grundausführung | HK_12/27_ze_L2_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 102: 2000 Grundausführung | SE_12/27_ze_L1/L2_S_83 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 55: 2000 Bolzenhöhe 0.4 | HK_11/27_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Rotor: Word=12 Excel=11
+
+Datei: 800-056-001_Abfuelluebersicht_K2000_SS05_R12ex_H29_L1_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 exzentrisch'; Huelse='29'; Linie='1'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ex', '29', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 66: 2000 Bolzenhöhe 0.4 | HK_12/29_ex_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 80: 2000 Bolzenhöhe 0.4 | SE_12/29_ex_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 93: 2000 Grundausführung | HK_12/29_ex_L1_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 103: 2000 Grundausführung | SE_12/29_ex_L1/L2_S_83 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 60: 2000 Bolzenhöhe 0.4 | HK_12/22_ex_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=29 Excel=22
+
+Datei: 800-056-002_Abfuelluebersicht_K2000_SS05_R12ex_H29_L2_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 exzentrisch'; Huelse='29'; Linie='2'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ex', '29', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 67: 2000 Bolzenhöhe 0.4 | HK_12/29_ex_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 80: 2000 Bolzenhöhe 0.4 | SE_12/29_ex_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 94: 2000 Grundausführung | HK_12/29_ex_L2_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 103: 2000 Grundausführung | SE_12/29_ex_L1/L2_S_83 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 61: 2000 Bolzenhöhe 0.4 | HK_12/22_ex_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=29 Excel=22
+
+Datei: 800-057-002_Abfuelluebersicht_K2000S_R12ze_H18_L2_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='18'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ze', '18', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 115: 2000S Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Linie: Word=2 Excel=1
+    Excelzeile 116: 2000S Grundausführung | HK_12/18_ze_L2_W_83_D_2.7_LV_0.5 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5
+    Excelzeile 117: 2000S Grundausführung | HK_12/18_ze_L2_W_83_D_2.7_LV_0.5_spez_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: Huelse: Word=18 Excel=20
+    Excelzeile 107: 2000S ChangeCode / Vario Ausführung | HK_12/16.6_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=18 Excel=16.6
+
+Datei: 800-058-001_Abfuelluebersicht_K2000S_R12ze_H27_L1_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='27'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ze', '27', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 115: 2000S Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Huelse: Word=27 Excel=18
+    Excelzeile 118: 2000S Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Huelse: Word=27 Excel=20
+    Excelzeile 121: 2000S Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Huelse: Word=27 Excel=22
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: Huelse: Word=27 Excel=20
+    Excelzeile 106: 2000S ChangeCode / Vario Ausführung | HK_12/16.6_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=STANDARD Excel=VARIO; Huelse: Word=27 Excel=16.6
+
+Datei: 800-058-002_Abfuelluebersicht_K2000S_R12ze_H27_L2_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='27'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ze', '27', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 109: 2000S ChangeCode / Vario Ausführung | HK_12/27_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: Huelse: Word=27 Excel=20
+    Excelzeile 107: 2000S ChangeCode / Vario Ausführung | HK_12/16.6_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=27 Excel=16.6
+    Excelzeile 108: 2000S ChangeCode / Vario Ausführung | HK_12/22_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=27 Excel=22
+    Excelzeile 111: 2000S ChangeCode / Vario Ausführung | HK_12/29_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=27 Excel=29
+
+Datei: 800-059-001_Abfuelluebersicht_K2000S_R12ex_H29_L1_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='29'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ex', '29', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 110: 2000S ChangeCode / Vario Ausführung | HK_12/29_ex_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Linie: Word=1 Excel=2
+    Excelzeile 115: 2000S Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=29 Excel=18
+    Excelzeile 118: 2000S Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=29 Excel=20
+    Excelzeile 121: 2000S Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=29 Excel=22
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=29 Excel=20
+
+Datei: 800-059-002_Abfuelluebersicht_K2000S_R12ex_H29_L2_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='29'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ex', '29', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 110: 2000S ChangeCode / Vario Ausführung | HK_12/29_ex_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5
+    Excelzeile 111: 2000S ChangeCode / Vario Ausführung | HK_12/29_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; ze/ex: Word=ex Excel=ze
+    Excelzeile 120: 2000S Grundausführung | HK_12/22_ex_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=29 Excel=22
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=29 Excel=20
+
+Datei: 800-062-001_Abfuelluebersicht_K3000_R12ze_H27_L1_Standard.doc
+  HK/SE-Zeilen: 6/13
+  Gelesen: System='3000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='27'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('3000', 'STANDARD', '12', 'ze', '27', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 127: 3000 Grundausführung | HK_12/17_ze_L1_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=27 Excel=17
+    Excelzeile 129: 3000 Grundausführung | HK_12/18_ze_L1_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=27 Excel=18
+    Excelzeile 131: 3000 Grundausführung | HK_12/20_ze_L1_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=27 Excel=20
+    Excelzeile 135: 3000 Grundausführung | HK_12/22_ze_L1_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=27 Excel=22
+    Excelzeile 137: 3000 Grundausführung | HK_12/23_ze_L1_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=27 Excel=23
+
+Datei: 800-062-002_Abfuelluebersicht_K3000_R12ze_H27_L2_Standard.doc
+  HK/SE-Zeilen: 6/13
+  Gelesen: System='3000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='27'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('3000', 'STANDARD', '12', 'ze', '27', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 128: 3000 Grundausführung | HK_12/17_ze_L2_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=27 Excel=17
+    Excelzeile 130: 3000 Grundausführung | HK_12/18_ze_L2_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=27 Excel=18
+    Excelzeile 132: 3000 Grundausführung | HK_12/20_ze_L2_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=27 Excel=20
+    Excelzeile 136: 3000 Grundausführung | HK_12/22_ze_L2_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=27 Excel=22
+    Excelzeile 138: 3000 Grundausführung | HK_12/23_ze_L2_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=27 Excel=23
+
+Datei: 800-151-001_Abfuelluebersicht_K2000S_R12ex_H20_L1_28-021.doc
+  HK/SE-Zeilen: 5/14
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='20'; Linie='1'; Funktion='28.021'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ex', '20', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 118: 2000S Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: ze/ex: Word=ex Excel=ze
+    Excelzeile 115: 2000S Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=20 Excel=18
+    Excelzeile 121: 2000S Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=20 Excel=22
+
+Datei: 800-151-002_Abfuelluebersicht_K2000S_R12ex_H20_L2_28-021.doc
+  HK/SE-Zeilen: 5/14
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='20'; Linie='2'; Funktion='28.021'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ex', '20', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: ze/ex: Word=ex Excel=ze
+    Excelzeile 110: 2000S ChangeCode / Vario Ausführung | HK_12/29_ex_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=20 Excel=29
+    Excelzeile 118: 2000S Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze; Linie: Word=2 Excel=1
+    Excelzeile 119: 2000S Grundausführung | HK_12/20_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; ze/ex: Word=ex Excel=ze
+    Excelzeile 120: 2000S Grundausführung | HK_12/22_ex_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=20 Excel=22
+
+Datei: 800-200-002_Abfuelluebersicht_K10S_R11_H17_L2_Anlagen.doc
+  HK/SE-Zeilen: 0/12
+  Gelesen: System='10S'; Variante='STANDARD'; Rotor='11'; Huelse='17 / 18'; Linie='2'; Funktion='Anlagen'
+  Match-Key(s): [('10S', 'STANDARD', '11', 'ze', '17', '2'), ('10S', 'STANDARD', '11', 'ze', '18', '2')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-201-002_Abfuelluebersicht_K10S_R12_H22_L2_Anlagen.doc
+  HK/SE-Zeilen: 0/12
+  Gelesen: System='10S'; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='22'; Linie='2'; Funktion='Anlagen'
+  Match-Key(s): [('10S', 'STANDARD', '12', 'ex', '22', '2')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-208-002_Abfuelluebersicht_K2000S_R12ze_H22_L2_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='22'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ze', '22', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 108: 2000S ChangeCode / Vario Ausführung | HK_12/22_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5
+    Excelzeile 121: 2000S Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Linie: Word=2 Excel=1
+    Excelzeile 122: 2000S Grundausführung | HK_12/22_ze_L2_W_83_D_2.7_LV_0.5_spez_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: Huelse: Word=22 Excel=20
+    Excelzeile 107: 2000S ChangeCode / Vario Ausführung | HK_12/16.6_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=22 Excel=16.6
+
+Datei: 800-219-001_Abfuelluebersicht_K2000S_R11_H18_L1_28-019.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='11'; Huelse='18'; Linie='1'; Funktion='28.019'
+  Match-Key(s): [('2000S', 'STANDARD', '11', 'ze', '18', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 113: 2000S Grundausführung | HK_11/17_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Huelse: Word=18 Excel=17
+    Excelzeile 115: 2000S Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Rotor: Word=11 Excel=12
+    Excelzeile 123: 2000S Grundausführung | SE_11/17_ze_L1/L2_S_83 | Unterschiede: Huelse: Word=18 Excel=17
+    Excelzeile 118: 2000S Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Rotor: Word=11 Excel=12; Huelse: Word=18 Excel=20
+    Excelzeile 121: 2000S Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Rotor: Word=11 Excel=12; Huelse: Word=18 Excel=22
+
+Datei: 800-219-002_Abfuelluebersicht_K2000S_R11_H18_L2_28-019.doc
+  HK/SE-Zeilen: 4/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='11'; Huelse='18'; Linie='2'; Funktion='28.019'
+  Match-Key(s): [('2000S', 'STANDARD', '11', 'ze', '18', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 123: 2000S Grundausführung | SE_11/17_ze_L1/L2_S_83 | Unterschiede: Huelse: Word=18 Excel=17
+    Excelzeile 113: 2000S Grundausführung | HK_11/17_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Huelse: Word=18 Excel=17; Linie: Word=2 Excel=1
+    Excelzeile 114: 2000S Grundausführung | HK_11/17_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=18 Excel=17
+    Excelzeile 115: 2000S Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Rotor: Word=11 Excel=12; Linie: Word=2 Excel=1
+    Excelzeile 116: 2000S Grundausführung | HK_12/18_ze_L2_W_83_D_2.7_LV_0.5 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Rotor: Word=11 Excel=12
+
+Datei: 800-248-001_Abfuelluebersicht_K2000S_R12_H18-6_L1_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12'; Huelse='18.6'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ze', '18.6', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 115: 2000S Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Huelse: Word=18.6 Excel=18
+    Excelzeile 118: 2000S Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Huelse: Word=18.6 Excel=20
+    Excelzeile 121: 2000S Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Huelse: Word=18.6 Excel=22
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: Huelse: Word=18.6 Excel=20
+    Excelzeile 106: 2000S ChangeCode / Vario Ausführung | HK_12/16.6_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=STANDARD Excel=VARIO; Huelse: Word=18.6 Excel=16.6
+
+Datei: 800-248-002_Abfuelluebersicht_K2000S_R12_H18-6_L2_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12'; Huelse='18.6'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ze', '18.6', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: Huelse: Word=18.6 Excel=20
+    Excelzeile 107: 2000S ChangeCode / Vario Ausführung | HK_12/16.6_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=18.6 Excel=16.6
+    Excelzeile 108: 2000S ChangeCode / Vario Ausführung | HK_12/22_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=18.6 Excel=22
+    Excelzeile 109: 2000S ChangeCode / Vario Ausführung | HK_12/27_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=18.6 Excel=27
+    Excelzeile 111: 2000S ChangeCode / Vario Ausführung | HK_12/29_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=18.6 Excel=29
+
+Datei: 800-251-001_Abfuelluebersicht_K2000S_R12ze_H29_L1_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='29'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ze', '29', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 115: 2000S Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Huelse: Word=29 Excel=18
+    Excelzeile 118: 2000S Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Huelse: Word=29 Excel=20
+    Excelzeile 121: 2000S Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Huelse: Word=29 Excel=22
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: Huelse: Word=29 Excel=20
+    Excelzeile 106: 2000S ChangeCode / Vario Ausführung | HK_12/16.6_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=STANDARD Excel=VARIO; Huelse: Word=29 Excel=16.6
+
+Datei: 800-251-002_Abfuelluebersicht_K2000S_R12ze_H29_L2_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='29'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ze', '29', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 111: 2000S ChangeCode / Vario Ausführung | HK_12/29_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: Huelse: Word=29 Excel=20
+    Excelzeile 107: 2000S ChangeCode / Vario Ausführung | HK_12/16.6_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=29 Excel=16.6
+    Excelzeile 108: 2000S ChangeCode / Vario Ausführung | HK_12/22_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=29 Excel=22
+    Excelzeile 109: 2000S ChangeCode / Vario Ausführung | HK_12/27_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=29 Excel=27
+
+Datei: 800-252-001_Abfuelluebersicht_K2000_SS05_R12_H18-6_L1_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12'; Huelse='18.6'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ze', '18.6', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 56: 2000 Bolzenhöhe 0.4 | HK_12/18_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=18.6 Excel=18
+    Excelzeile 58: 2000 Bolzenhöhe 0.4 | HK_12/20_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=18.6 Excel=20
+    Excelzeile 62: 2000 Bolzenhöhe 0.4 | HK_12/22_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=18.6 Excel=22
+    Excelzeile 64: 2000 Bolzenhöhe 0.4 | HK_12/27_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=18.6 Excel=27
+    Excelzeile 68: 2000 Bolzenhöhe 0.4 | HK_12/29_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=18.6 Excel=29
+
+Datei: 800-252-002_Abfuelluebersicht_K2000_SS05_R12_H18-6_L2_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12'; Huelse='18.6'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ze', '18.6', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 57: 2000 Bolzenhöhe 0.4 | HK_12/18_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=18.6 Excel=18
+    Excelzeile 59: 2000 Bolzenhöhe 0.4 | HK_12/20_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=18.6 Excel=20
+    Excelzeile 63: 2000 Bolzenhöhe 0.4 | HK_12/22_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=18.6 Excel=22
+    Excelzeile 65: 2000 Bolzenhöhe 0.4 | HK_12/27_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=18.6 Excel=27
+    Excelzeile 69: 2000 Bolzenhöhe 0.4 | HK_12/29_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=18.6 Excel=29
+
+Datei: 800-253-001_Abfuelluebersicht_K2000_SS05_R11_H17_L1_Anlagen.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='11'; Huelse='17 / 18'; Linie='1'; Funktion='Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '11', 'ze', '17', '1'), ('2000', 'SP_0.5', '11', 'ze', '18', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 50: 2000 Bolzenhöhe 0.4 | HK_11/17_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 52: 2000 Bolzenhöhe 0.4 | HK_11/18_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 72: 2000 Bolzenhöhe 0.4 | SE_11/17_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 73: 2000 Bolzenhöhe 0.4 | SE_11/18_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 51: 2000 Bolzenhöhe 0.4 | HK_11/17_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Linie: Word=1 Excel=2
+
+Datei: 800-253-002_Abfuelluebersicht_K2000_SS05_R11_H17_L2_Anlagen.doc
+  HK/SE-Zeilen: 4/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='11'; Huelse='17 / 18'; Linie='2'; Funktion='Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '11', 'ze', '17', '2'), ('2000', 'SP_0.5', '11', 'ze', '18', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 51: 2000 Bolzenhöhe 0.4 | HK_11/17_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 53: 2000 Bolzenhöhe 0.4 | HK_11/18_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 72: 2000 Bolzenhöhe 0.4 | SE_11/17_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 73: 2000 Bolzenhöhe 0.4 | SE_11/18_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 83: 2000 Grundausführung | HK_11/17_ze_L2_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+
+Datei: 800-257-001_Abfuelluebersicht_K2000_SS05_R12ze_H20_L1_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 zentrisch'; Huelse='20'; Linie='1'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ze', '20', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 58: 2000 Bolzenhöhe 0.4 | HK_12/20_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 76: 2000 Bolzenhöhe 0.4 | SE_12/20_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 56: 2000 Bolzenhöhe 0.4 | HK_12/18_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=20 Excel=18
+    Excelzeile 59: 2000 Bolzenhöhe 0.4 | HK_12/20_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Linie: Word=1 Excel=2
+    Excelzeile 62: 2000 Bolzenhöhe 0.4 | HK_12/22_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=20 Excel=22
+
+Datei: 800-257-002_Abfuelluebersicht_K2000_SS05_R12ze_H20_L2_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 zentrisch'; Huelse='20'; Linie='2'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ze', '20', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 59: 2000 Bolzenhöhe 0.4 | HK_12/20_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 76: 2000 Bolzenhöhe 0.4 | SE_12/20_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 86: 2000 Grundausführung | HK_12/20_ze_L2_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 57: 2000 Bolzenhöhe 0.4 | HK_12/18_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=20 Excel=18
+    Excelzeile 58: 2000 Bolzenhöhe 0.4 | HK_12/20_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Linie: Word=2 Excel=1
+
+Datei: 800-262-001_Abfuelluebersicht_K2000_SS05_R12ze_H22_L1_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 zentrisch'; Huelse='22'; Linie='1'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ze', '22', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 62: 2000 Bolzenhöhe 0.4 | HK_12/22_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 78: 2000 Bolzenhöhe 0.4 | SE_12/22_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 89: 2000 Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 101: 2000 Grundausführung | SE_12/22_ze_L1/L2_S_83 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 56: 2000 Bolzenhöhe 0.4 | HK_12/18_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=22 Excel=18
+
+Datei: 800-262-002_Abfuelluebersicht_K2000_SS05_R12ze_H22_L2_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 zentrisch'; Huelse='22'; Linie='2'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ze', '22', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 63: 2000 Bolzenhöhe 0.4 | HK_12/22_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 78: 2000 Bolzenhöhe 0.4 | SE_12/22_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 90: 2000 Grundausführung | HK_12/22_ze_L2_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 101: 2000 Grundausführung | SE_12/22_ze_L1/L2_S_83 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 57: 2000 Bolzenhöhe 0.4 | HK_12/18_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=22 Excel=18
+
+Datei: 800-266-001_Abfuelluebersicht_K2000_SS05_R12ze_H29_L1_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 zentrisch'; Huelse='29'; Linie='1'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ze', '29', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 68: 2000 Bolzenhöhe 0.4 | HK_12/29_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 81: 2000 Bolzenhöhe 0.4 | SE_12/29_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 95: 2000 Grundausführung | HK_12/29_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 104: 2000 Grundausführung | SE_12/29_ze_L1/L2_S_83 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 56: 2000 Bolzenhöhe 0.4 | HK_12/18_ze_L1_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=29 Excel=18
+
+Datei: 800-266-002_Abfuelluebersicht_K2000_SS05_R12ze_H29_L2_Standard.doc
+  HK/SE-Zeilen: 6/8
+  Gelesen: System='2000 0.5'; Variante='SP_0.5'; Rotor='12 zentrisch'; Huelse='29'; Linie='2'; Funktion='Standard / Anlagen'
+  Match-Key(s): [('2000', 'SP_0.5', '12', 'ze', '29', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 69: 2000 Bolzenhöhe 0.4 | HK_12/29_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 81: 2000 Bolzenhöhe 0.4 | SE_12/29_ze_L1/L2_S_88_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4
+    Excelzeile 96: 2000 Grundausführung | HK_12/29_ze_L2_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 104: 2000 Grundausführung | SE_12/29_ze_L1/L2_S_83 | Unterschiede: Variante: Word=SP_0.5 Excel=STANDARD
+    Excelzeile 57: 2000 Bolzenhöhe 0.4 | HK_12/18_ze_L2_W_88_D_2.7_SP_0.4 | Unterschiede: Variante: Word=SP_0.5 Excel=SP_0.4; Huelse: Word=29 Excel=18
+
+Datei: 800-284-001_Abfuelluebersicht_K3000_R12ex_H29_L1_Standard.doc
+  HK/SE-Zeilen: 6/13
+  Gelesen: System='3000'; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='29'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('3000', 'STANDARD', '12', 'ex', '29', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 125: 3000 Grundausführung | HK_12/17_ex_L1_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=29 Excel=17
+    Excelzeile 133: 3000 Grundausführung | HK_12/22_ex_L1_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=29 Excel=22
+    Excelzeile 139: 3000 Grundausführung | HK_12/29_ze_L1_W_76_D_2.4_RHOM_3000 | Unterschiede: ze/ex: Word=ex Excel=ze
+    Excelzeile 141: 3000 Grundausführung | SE_12/17_ex_L1/L2_S_76_RHOM_3000 | Unterschiede: Huelse: Word=29 Excel=17
+    Excelzeile 146: 3000 Grundausführung | SE_12/22_ex_L1/L2_S_76_RHOM_3000 | Unterschiede: Huelse: Word=29 Excel=22
+
+Datei: 800-284-002_Abfuelluebersicht_K3000_R12ex_H29_L2_Standard.doc
+  HK/SE-Zeilen: 6/13
+  Gelesen: System='3000'; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='29'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('3000', 'STANDARD', '12', 'ex', '29', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 126: 3000 Grundausführung | HK_12/17_ex_L2_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=29 Excel=17
+    Excelzeile 134: 3000 Grundausführung | HK_12/22_ex_L2_W_76_D_2.4_RHOM_3000 | Unterschiede: Huelse: Word=29 Excel=22
+    Excelzeile 140: 3000 Grundausführung | HK_12/29_ze_L2_W_76_D_2.4_RHOM_3000 | Unterschiede: ze/ex: Word=ex Excel=ze
+    Excelzeile 141: 3000 Grundausführung | SE_12/17_ex_L1/L2_S_76_RHOM_3000 | Unterschiede: Huelse: Word=29 Excel=17
+    Excelzeile 146: 3000 Grundausführung | SE_12/22_ex_L1/L2_S_76_RHOM_3000 | Unterschiede: Huelse: Word=29 Excel=22
+
+Datei: 800-298_Abfuelluebersicht_K1000S_R14ze_H28_Schlumberger.doc
+  HK/SE-Zeilen: 4/6
+  Gelesen: System='1000S'; Variante='STANDARD'; Rotor='14 zentrisch'; Huelse='28'; Linie='1'; Funktion='Schlumberger'
+  Match-Key(s): [('1000S', 'STANDARD', '14', 'ze', '28', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 26: 1000S Grundausführung | HK_12/17_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Rotor: Word=14 Excel=12; Huelse: Word=28 Excel=17
+    Excelzeile 28: 1000S Grundausführung | HK_12/18_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Rotor: Word=14 Excel=12; Huelse: Word=28 Excel=18
+    Excelzeile 30: 1000S Grundausführung | HK_12/20_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Rotor: Word=14 Excel=12; Huelse: Word=28 Excel=20
+    Excelzeile 34: 1000S Grundausführung | HK_12/22_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Rotor: Word=14 Excel=12; Huelse: Word=28 Excel=22
+    Excelzeile 36: 1000S Grundausführung | HK_12/23_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Rotor: Word=14 Excel=12; Huelse: Word=28 Excel=23
+
+Datei: 800-300-001_Abfuelluebersicht_K2000S_R12_H16-6_L1_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12'; Huelse='16.6'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ze', '16.6', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 106: 2000S ChangeCode / Vario Ausführung | HK_12/16.6_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=STANDARD Excel=VARIO
+    Excelzeile 112: 2000S ChangeCode / Vario Ausführung | SE_12/16.6_ze_L1/L2_S_83 | Unterschiede: Variante: Word=STANDARD Excel=VARIO
+    Excelzeile 115: 2000S Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Huelse: Word=16.6 Excel=18
+    Excelzeile 118: 2000S Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Huelse: Word=16.6 Excel=20
+    Excelzeile 121: 2000S Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Huelse: Word=16.6 Excel=22
+
+Datei: 800-300-002_Abfuelluebersicht_K2000S_R12_H16-6_L2_Standard.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='2000S'; Variante='STANDARD'; Rotor='12'; Huelse='16.6'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ze', '16.6', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 107: 2000S ChangeCode / Vario Ausführung | HK_12/16.6_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5
+    Excelzeile 112: 2000S ChangeCode / Vario Ausführung | SE_12/16.6_ze_L1/L2_S_83 | Unterschiede: Variante: Word=STANDARD Excel=VARIO
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: Huelse: Word=16.6 Excel=20
+    Excelzeile 106: 2000S ChangeCode / Vario Ausführung | HK_12/16.6_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=STANDARD Excel=VARIO; Linie: Word=2 Excel=1
+    Excelzeile 108: 2000S ChangeCode / Vario Ausführung | HK_12/22_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=16.6 Excel=22
+
+Datei: 800-304-002_Abfuelluebersicht_K10S_R12ze_H22_L2_Anlagen.doc
+  HK/SE-Zeilen: 0/12
+  Gelesen: System='10S'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='22'; Linie='2'; Funktion='Anlagen'
+  Match-Key(s): [('10S', 'STANDARD', '12', 'ze', '22', '2')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-340-001_Abfuelluebersicht_octro2_R12ex_H22_L1_LIPS.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='octro 2000S('; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='22'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ex', '22', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 121: 2000S Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze
+    Excelzeile 115: 2000S Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=22 Excel=18
+    Excelzeile 118: 2000S Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=22 Excel=20
+    Excelzeile 120: 2000S Grundausführung | HK_12/22_ex_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Linie: Word=1 Excel=2
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=22 Excel=20
+
+Datei: 800-340-002_Abfuelluebersicht_octro2_R12ex_H22_L2_LIPS.doc
+  HK/SE-Zeilen: 6/12
+  Gelesen: System='octro 2000S('; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='22'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('2000S', 'STANDARD', '12', 'ex', '22', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 120: 2000S Grundausführung | HK_12/22_ex_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5
+    Excelzeile 108: 2000S ChangeCode / Vario Ausführung | HK_12/22_ze_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; ze/ex: Word=ex Excel=ze
+    Excelzeile 110: 2000S ChangeCode / Vario Ausführung | HK_12/29_ex_L2_W_83_D_2.7_LV_0.5_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; Huelse: Word=22 Excel=29
+    Excelzeile 121: 2000S Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: ze/ex: Word=ex Excel=ze; Linie: Word=2 Excel=1
+    Excelzeile 122: 2000S Grundausführung | HK_12/22_ze_L2_W_83_D_2.7_LV_0.5_spez_OM1 | Unterschiede: Variante: Word=STANDARD Excel=SP_0.5; ze/ex: Word=ex Excel=ze
+
+Datei: 800-391-001_Abfuelluebersicht_K4000_R11_H17_L1_Standard-ABS.doc
+  HK/SE-Zeilen: 5/10
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='11'; Huelse='17'; Linie='1'; Funktion='Standard / ABS'
+  Match-Key(s): [('4000', 'STANDARD', '11', 'ze', '17', '1')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-391-002_Abfuelluebersicht_K4000_R11_H17_L2_Standard-ABS.doc
+  HK/SE-Zeilen: 5/11
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='11'; Huelse='17'; Linie='2'; Funktion='Standard / ABS'
+  Match-Key(s): [('4000', 'STANDARD', '11', 'ze', '17', '2')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-392-001_Abfuelluebersicht_K4000_R12ze_H18_L1_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='18'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('4000', 'STANDARD', '12', 'ze', '18', '1')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-392-002_Abfuelluebersicht_K4000_R12ze_H18_L2_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='18'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('4000', 'STANDARD', '12', 'ze', '18', '2')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-394-001_Abfuelluebersicht_K4000_R12ze_H22_L1_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='22'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('4000', 'STANDARD', '12', 'ze', '22', '1')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-394-002_Abfuelluebersicht_K4000_R12ze_H22_L2_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='22'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('4000', 'STANDARD', '12', 'ze', '22', '2')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-396-001_Abfuelluebersicht_K4000_R12ex_H29_L1_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='29'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('4000', 'STANDARD', '12', 'ex', '29', '1')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-396-002_Abfuelluebersicht_K4000_R12ex_H29_L2_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='29'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('4000', 'STANDARD', '12', 'ex', '29', '2')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-399_Abfuelluebersicht_K1000S_R14ze_H28_parceon.doc
+  HK/SE-Zeilen: 1/6
+  Gelesen: System='1000S'; Variante='STANDARD'; Rotor='14 zentrisch'; Huelse='28'; Linie='1'; Funktion='parceon'
+  Match-Key(s): [('1000S', 'STANDARD', '14', 'ze', '28', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 26: 1000S Grundausführung | HK_12/17_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Rotor: Word=14 Excel=12; Huelse: Word=28 Excel=17
+    Excelzeile 28: 1000S Grundausführung | HK_12/18_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Rotor: Word=14 Excel=12; Huelse: Word=28 Excel=18
+    Excelzeile 30: 1000S Grundausführung | HK_12/20_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Rotor: Word=14 Excel=12; Huelse: Word=28 Excel=20
+    Excelzeile 34: 1000S Grundausführung | HK_12/22_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Rotor: Word=14 Excel=12; Huelse: Word=28 Excel=22
+    Excelzeile 36: 1000S Grundausführung | HK_12/23_ze_L1_W_76_D_2.4_RHOM | Unterschiede: Rotor: Word=14 Excel=12; Huelse: Word=28 Excel=23
+
+Datei: 800-402_Abfuelluebersicht_K2000_R12_H20_L1_Japan.doc
+  HK/SE-Zeilen: 8/12
+  Gelesen: System='2000S'; Variante='VARIO'; Rotor='12'; Huelse='20'; Linie='1'; Funktion='Vario / Change Code'
+  Match-Key(s): [('2000S', 'VARIO', '12', 'ze', '20', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 106: 2000S ChangeCode / Vario Ausführung | HK_12/16.6_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Huelse: Word=20 Excel=16.6
+    Excelzeile 112: 2000S ChangeCode / Vario Ausführung | SE_12/16.6_ze_L1/L2_S_83 | Unterschiede: Huelse: Word=20 Excel=16.6
+    Excelzeile 118: 2000S Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM1 | Unterschiede: Variante: Word=VARIO Excel=STANDARD
+    Excelzeile 124: 2000S Grundausführung | SE_12/20_ze_L1/L2_S_83 | Unterschiede: Variante: Word=VARIO Excel=STANDARD
+    Excelzeile 115: 2000S Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_spez_OM1 | Unterschiede: Variante: Word=VARIO Excel=STANDARD; Huelse: Word=20 Excel=18
+
+Datei: 800-410-001_Abfuelluebersicht_K4000_R12ze_H29_L1_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='29'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('4000', 'STANDARD', '12', 'ze', '29', '1')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-410-002_Abfuelluebersicht_K4000_R12ze_H29_L2_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='29'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('4000', 'STANDARD', '12', 'ze', '29', '2')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-427-001_Abfuelluebersicht_K4000_R12ex_H22_L1_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='22'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('4000', 'STANDARD', '12', 'ex', '22', '1')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-427-002_Abfuelluebersicht_K4000_R12ex_H22_L2_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 exzentrisch'; Huelse='22'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('4000', 'STANDARD', '12', 'ex', '22', '2')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-450_Abfuelluebersicht-KESO-CASA-R11-H17.doc
+  HK/SE-Zeilen: 5/10
+  Gelesen: System='KESO CASA'; Variante='CASA'; Rotor='11'; Huelse='17'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('4000S', 'CASA', '11', 'ze', '17', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 149: 4000S Casa | HK_12/18_ze_L1_W_83_D_2.7_CASA | Unterschiede: Rotor: Word=11 Excel=12; Huelse: Word=17 Excel=18
+    Excelzeile 150: 4000S Grundausführung | HK_11/17_ze_L2_W_83_D_1.8_OM1 | Unterschiede: Variante: Word=CASA Excel=STANDARD; Linie: Word=1 Excel=2
+
+Datei: 800-452_Abfuelluebersicht-KESO-CASA-R12ze-H22.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='KESO CASA'; Variante='CASA'; Rotor='12 zentrisch'; Huelse='22'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('4000S', 'CASA', '12', 'ze', '22', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 149: 4000S Casa | HK_12/18_ze_L1_W_83_D_2.7_CASA | Unterschiede: Huelse: Word=22 Excel=18
+
+Datei: 800-453_Abfuelluebersicht-KESO-CASA-R12ex-H22.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='KESO CASA'; Variante='CASA'; Rotor='12 exzentrisch'; Huelse='22'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('4000S', 'CASA', '12', 'ex', '22', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 149: 4000S Casa | HK_12/18_ze_L1_W_83_D_2.7_CASA | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=22 Excel=18
+
+Datei: 800-454-Abfuelluebersicht-KESO-CASA-R12ze-H29.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='KESO CASA'; Variante='CASA'; Rotor='12 zentrisch'; Huelse='29'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('4000S', 'CASA', '12', 'ze', '29', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 149: 4000S Casa | HK_12/18_ze_L1_W_83_D_2.7_CASA | Unterschiede: Huelse: Word=29 Excel=18
+
+Datei: 800-455_Abfuelluebersicht-KESO-CASA-R12ex-H29.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='KESO CASA'; Variante='CASA'; Rotor='12 exzentrisch'; Huelse='29'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('4000S', 'CASA', '12', 'ex', '29', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 149: 4000S Casa | HK_12/18_ze_L1_W_83_D_2.7_CASA | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=29 Excel=18
+
+Datei: 800-477-001_Abfuelluebersicht_K8000_R12ze_H29_L1_Standard.doc
+  HK/SE-Zeilen: 4/9
+  Gelesen: System='8000\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00©\x032'; Variante='STANDARD'; Rotor='12 ze'; Huelse='29'; Linie='1'; Funktion=None
+  Match-Key(s): [('8000', 'STANDARD', '12', 'ze', '29', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 173: 8000 Grundausführung | HK_12/29_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2
+    Excelzeile 192: 8000 Grundausführung Omega 3 | HK_12/29_ze_L1_W_83_D_2.7_OM3 | Unterschiede: Variante: Word=STANDARD Excel=OM3
+    Excelzeile 161: 8000 Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=29 Excel=18
+    Excelzeile 163: 8000 Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=29 Excel=20
+    Excelzeile 167: 8000 Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=29 Excel=22
+
+Datei: 800-477-002_Abfuelluebersicht_K8000_R12ze_H29_L2_Standard.doc
+  HK/SE-Zeilen: 4/9
+  Gelesen: System='8000\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00©\x032'; Variante='STANDARD'; Rotor='12 ze'; Huelse='29'; Linie='2'; Funktion=None
+  Match-Key(s): [('8000', 'STANDARD', '12', 'ze', '29', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 174: 8000 Grundausführung | HK_12/29_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2
+    Excelzeile 193: 8000 Grundausführung Omega 3 | HK_12/29_ze_L2_W_83_D_2.7_OM3 | Unterschiede: Variante: Word=STANDARD Excel=OM3
+    Excelzeile 162: 8000 Grundausführung | HK_12/18_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=29 Excel=18
+    Excelzeile 164: 8000 Grundausführung | HK_12/20_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=29 Excel=20
+    Excelzeile 169: 8000 Grundausführung | HK_12/22_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=29 Excel=22
+
+Datei: 800-479-001_Abfuelluebersicht_K8000_R12ex_H29_L1_Standard.doc
+  HK/SE-Zeilen: 4/9
+  Gelesen: System='8000\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00©\x032'; Variante='STANDARD'; Rotor='12 ex'; Huelse='29'; Linie='1'; Funktion=None
+  Match-Key(s): [('8000', 'STANDARD', '12', 'ex', '29', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 171: 8000 Grundausführung | HK_12/29_ex_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2
+    Excelzeile 190: 8000 Grundausführung Omega 3 | HK_12/29_ex_L1_W_83_D_2.7_OM3 | Unterschiede: Variante: Word=STANDARD Excel=OM3
+    Excelzeile 165: 8000 Grundausführung | HK_12/22_ex_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=29 Excel=22
+    Excelzeile 172: 8000 Grundausführung | HK_12/29_ex_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Linie: Word=1 Excel=2
+    Excelzeile 173: 8000 Grundausführung | HK_12/29_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; ze/ex: Word=ex Excel=ze
+
+Datei: 800-479-002_Abfuelluebersicht_K8000_R12ex_H29_L2_Standard.doc
+  HK/SE-Zeilen: 4/9
+  Gelesen: System='8000 \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00©\x032'; Variante='STANDARD'; Rotor='12 ex'; Huelse='29'; Linie='2'; Funktion=None
+  Match-Key(s): [('8000', 'STANDARD', '12', 'ex', '29', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 172: 8000 Grundausführung | HK_12/29_ex_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2
+    Excelzeile 191: 8000 Grundausführung Omega 3 | HK_12/29_ex_L2_W_83_D_2.7_OM3 | Unterschiede: Variante: Word=STANDARD Excel=OM3
+    Excelzeile 166: 8000 Grundausführung | HK_12/22_ex_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=29 Excel=22
+    Excelzeile 171: 8000 Grundausführung | HK_12/29_ex_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Linie: Word=2 Excel=1
+    Excelzeile 174: 8000 Grundausführung | HK_12/29_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; ze/ex: Word=ex Excel=ze
+
+Datei: 800-481-001_Abfuelluebersicht_K8000_R12ze_H18_L1_Standard.doc
+  HK/SE-Zeilen: 3/9
+  Gelesen: System='8000'; Variante='STANDARD'; Rotor='12 ze'; Huelse='18'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('8000', 'STANDARD', '12', 'ze', '18', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 161: 8000 Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2
+    Excelzeile 180: 8000 Grundausführung Omega 3 | HK_12/18_ze_L1_W_83_D_2.7_OM3 | Unterschiede: Variante: Word=STANDARD Excel=OM3
+    Excelzeile 162: 8000 Grundausführung | HK_12/18_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Linie: Word=1 Excel=2
+    Excelzeile 163: 8000 Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=18 Excel=20
+    Excelzeile 167: 8000 Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=18 Excel=22
+
+Datei: 800-481-002_Abfuelluebersicht_K8000_R12ze_H18_L2_Standard.doc
+  HK/SE-Zeilen: 3/9
+  Gelesen: System='8000'; Variante='STANDARD'; Rotor='12 ze'; Huelse='18'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('8000', 'STANDARD', '12', 'ze', '18', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 162: 8000 Grundausführung | HK_12/18_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2
+    Excelzeile 181: 8000 Grundausführung Omega 3 | HK_12/18_ze_L2_W_83_D_2.7_OM3 | Unterschiede: Variante: Word=STANDARD Excel=OM3
+    Excelzeile 161: 8000 Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Linie: Word=2 Excel=1
+    Excelzeile 164: 8000 Grundausführung | HK_12/20_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=18 Excel=20
+    Excelzeile 169: 8000 Grundausführung | HK_12/22_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=18 Excel=22
+
+Datei: 800-482-001_Abfuelluebersicht_K8000_R12ze_H22_L1_Standard.doc
+  HK/SE-Zeilen: 4/9
+  Gelesen: System='8000\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x12\x08\x00\x00\x13\x08\x00\x00\x7f\x08\x00\x00µ\x08\x00\x00¶\x08\x00\x00¾\x08\x00\x00À\x08\x00\x00ö\x08\x00\x00÷\x08\x00\x00ÿ\x08\x00\x00\x01\t\x00\x00E\t\x00\x00F\t\x00\x00N\t\x00\x00P\t\x00\x00Ž\t\x00\x00\t\x00\x00—\t\x00\x00™\t\x00\x00×\t\x00\x00Ø\t\x00\x00à\t\x00\x00â\t\x00\x00\x18'; Variante='STANDARD'; Rotor='12 ze'; Huelse='22'; Linie='1'; Funktion=None
+  Match-Key(s): [('8000', 'STANDARD', '12', 'ze', '22', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 167: 8000 Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2
+    Excelzeile 168: 8000 Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2
+    Excelzeile 186: 8000 Grundausführung Omega 3 | HK_12/22_ze_L1_W_83_D_2.7_OM3 | Unterschiede: Variante: Word=STANDARD Excel=OM3
+    Excelzeile 187: 8000 Grundausführung Omega 3 | HK_12/22_ze_L1_W_83_D_2.7_spez_OM3 | Unterschiede: Variante: Word=STANDARD Excel=OM3
+    Excelzeile 161: 8000 Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=22 Excel=18
+
+Datei: 800-482-002_Abfuelluebersicht_K8000_R12ze_H22_L2_Standard.doc
+  HK/SE-Zeilen: 2/9
+  Gelesen: System='8000'; Variante='STANDARD'; Rotor='12 ze'; Huelse='22'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('8000', 'STANDARD', '12', 'ze', '22', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 169: 8000 Grundausführung | HK_12/22_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2
+    Excelzeile 170: 8000 Grundausführung | HK_12/22_ze_L2_W_83_D_2.7_spez_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2
+    Excelzeile 188: 8000 Grundausführung Omega 3 | HK_12/22_ze_L2_W_83_D_2.7_OM3 | Unterschiede: Variante: Word=STANDARD Excel=OM3
+    Excelzeile 189: 8000 Grundausführung Omega 3 | HK_12/22_ze_L2_W_83_D_2.7_spez_OM3 | Unterschiede: Variante: Word=STANDARD Excel=OM3
+    Excelzeile 162: 8000 Grundausführung | HK_12/18_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=22 Excel=18
+
+Datei: 800-484-001_Abfuelluebersicht_K8000_R12ze_H20_L1_Standard.doc
+  HK/SE-Zeilen: 4/9
+  Gelesen: System='8000\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x12\x08\x00\x00\x13\x08\x00\x00\x7f\x08\x00\x00ž\x08\x00\x00§\x08\x00\x00ª\x08\x00\x00±\x08\x00\x00µ\x08\x00\x00¶\x08\x00\x00¾\x08\x00\x00À\x08\x00\x00Þ\x08\x00\x00æ\x08\x00\x00ç\x08\x00\x00ð\x08\x00\x00ó\x08\x00\x00ú\x08\x00\x00þ\x08\x00\x00ÿ\x08'; Variante='STANDARD'; Rotor='12 ze'; Huelse='20'; Linie='1'; Funktion=None
+  Match-Key(s): [('8000', 'STANDARD', '12', 'ze', '20', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 163: 8000 Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2
+    Excelzeile 182: 8000 Grundausführung Omega 3 | HK_12/20_ze_L1_W_83_D_2.7_OM3 | Unterschiede: Variante: Word=STANDARD Excel=OM3
+    Excelzeile 161: 8000 Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=20 Excel=18
+    Excelzeile 164: 8000 Grundausführung | HK_12/20_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Linie: Word=1 Excel=2
+    Excelzeile 167: 8000 Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=20 Excel=22
+
+Datei: 800-484-002_Abfuelluebersicht_K8000_R12ze_H20_L2_Standard.doc
+  HK/SE-Zeilen: 4/9
+  Gelesen: System='8000\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x12\x08\x00\x00\x13\x08\x00\x00\x7f\x08\x00\x00ž\x08\x00\x00§\x08\x00\x00ª\x08\x00\x00±\x08\x00\x00µ\x08\x00\x00¶\x08\x00\x00¾\x08\x00\x00À\x08\x00\x00Þ\x08\x00\x00æ\x08\x00\x00ç\x08\x00\x00ð\x08\x00\x00ó\x08\x00\x00ú\x08\x00\x00þ\x08\x00\x00ÿ\x08'; Variante='STANDARD'; Rotor='12 ze'; Huelse='20'; Linie='2'; Funktion=None
+  Match-Key(s): [('8000', 'STANDARD', '12', 'ze', '20', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 164: 8000 Grundausführung | HK_12/20_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2
+    Excelzeile 183: 8000 Grundausführung Omega 3 | HK_12/20_ze_L2_W_83_D_2.7_OM3 | Unterschiede: Variante: Word=STANDARD Excel=OM3
+    Excelzeile 162: 8000 Grundausführung | HK_12/18_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=20 Excel=18
+    Excelzeile 163: 8000 Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Linie: Word=2 Excel=1
+    Excelzeile 169: 8000 Grundausführung | HK_12/22_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=20 Excel=22
+
+Datei: 800-485-001_Abfuelluebersicht_K4000S_R12ze_H27_L1_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='27'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('4000S', 'STANDARD', '12', 'ze', '27', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 151: 4000S Grundausführung | HK_12/18_ze_L2_W_83_D_2.7_spez_OM1 | Unterschiede: Huelse: Word=27 Excel=18
+    Excelzeile 150: 4000S Grundausführung | HK_11/17_ze_L2_W_83_D_1.8_OM1 | Unterschiede: Rotor: Word=12 Excel=11; Huelse: Word=27 Excel=17
+
+Datei: 800-485-002_Abfuelluebersicht_K4000S_R12ze_H27_L2_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='27'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('4000S', 'STANDARD', '12', 'ze', '27', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 151: 4000S Grundausführung | HK_12/18_ze_L2_W_83_D_2.7_spez_OM1 | Unterschiede: Huelse: Word=27 Excel=18
+    Excelzeile 150: 4000S Grundausführung | HK_11/17_ze_L2_W_83_D_1.8_OM1 | Unterschiede: Rotor: Word=12 Excel=11; Huelse: Word=27 Excel=17
+
+Datei: 800-488-001_Abfuelluebersicht_K4000_R12ze_H20_L1_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='20'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('4000', 'STANDARD', '12', 'ze', '20', '1')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-488-002_Abfuelluebersicht_K4000_R12ze_H20_L2_Standard.doc
+  HK/SE-Zeilen: 5/9
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='20'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('4000', 'STANDARD', '12', 'ze', '20', '2')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-489_Abfuelluebersicht_K2500_R12ze_H20_Standard.doc
+  HK/SE-Zeilen: 4/9
+  Gelesen: System='2500'; Variante='STANDARD'; Rotor='12 zentrisch'; Huelse='20'; Linie='1'; Funktion='Standard'
+  Match-Key(s): [('2500', 'STANDARD', '12', 'ze', '20', '1')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-535-001_Abfuelluebersicht_K8000_R12ze_H27_L1_Standard.doc
+  HK/SE-Zeilen: 4/9
+  Gelesen: System='8000\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00©\x032'; Variante='STANDARD'; Rotor='12 ze'; Huelse='27'; Linie='1'; Funktion=None
+  Match-Key(s): [('8000', 'STANDARD', '12', 'ze', '27', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 161: 8000 Grundausführung | HK_12/18_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=27 Excel=18
+    Excelzeile 163: 8000 Grundausführung | HK_12/20_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=27 Excel=20
+    Excelzeile 167: 8000 Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=27 Excel=22
+    Excelzeile 168: 8000 Grundausführung | HK_12/22_ze_L1_W_83_D_2.7_spez_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=27 Excel=22
+    Excelzeile 173: 8000 Grundausführung | HK_12/29_ze_L1_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=27 Excel=29
+
+Datei: 800-535-002_Abfuelluebersicht_K8000_R12ze_H27_L2_Standard.doc
+  HK/SE-Zeilen: 4/9
+  Gelesen: System='8000\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00©\x032'; Variante='STANDARD'; Rotor='12 ze'; Huelse='27'; Linie='2'; Funktion=None
+  Match-Key(s): [('8000', 'STANDARD', '12', 'ze', '27', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 162: 8000 Grundausführung | HK_12/18_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=27 Excel=18
+    Excelzeile 164: 8000 Grundausführung | HK_12/20_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=27 Excel=20
+    Excelzeile 169: 8000 Grundausführung | HK_12/22_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=27 Excel=22
+    Excelzeile 170: 8000 Grundausführung | HK_12/22_ze_L2_W_83_D_2.7_spez_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=27 Excel=22
+    Excelzeile 174: 8000 Grundausführung | HK_12/29_ze_L2_W_83_D_2.7_OM2 | Unterschiede: Variante: Word=STANDARD Excel=OM2; Huelse: Word=27 Excel=29
+
+Datei: 800-536-001_Abfuelluebersicht_K4000_L1_Insert.doc
+  HK/SE-Zeilen: 5/10
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='11'; Huelse='17 / 16.4 Insert'; Linie='1'; Funktion='Standard / ABS'
+  Match-Key(s): [('4000', 'STANDARD', '11', 'ze', '17', '1'), ('4000', 'STANDARD', '11', 'ze', '16.4', '1')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-536-002_Abfuelluebersicht_K4000_L2_Insert.doc
+  HK/SE-Zeilen: 5/11
+  Gelesen: System='4000'; Variante='STANDARD'; Rotor='11'; Huelse='17 / 16.4 Insert'; Linie='2'; Funktion='Standard / ABS'
+  Match-Key(s): [('4000', 'STANDARD', '11', 'ze', '17', '2'), ('4000', 'STANDARD', '11', 'ze', '16.4', '2')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-538_Abfuelluebersicht_K2500_Insert.doc
+  HK/SE-Zeilen: 4/10
+  Gelesen: System='2500 (KESO Casa)'; Variante='CASA'; Rotor='11'; Huelse='17 / 16.4 Insert'; Linie='2'; Funktion='Standard / ABS'
+  Match-Key(s): [('4000S', 'CASA', '11', 'ze', '17', '1'), ('4000S', 'CASA', '11', 'ze', '16.4', '1')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 149: 4000S Casa | HK_12/18_ze_L1_W_83_D_2.7_CASA | Unterschiede: Rotor: Word=11 Excel=12; Huelse: Word=17 Excel=18
+    Excelzeile 150: 4000S Grundausführung | HK_11/17_ze_L2_W_83_D_1.8_OM1 | Unterschiede: Variante: Word=CASA Excel=STANDARD; Linie: Word=1 Excel=2
+
+Datei: 800-540-001_Abfuelluebersicht_K10RS_L1_Insert.doc
+  HK/SE-Zeilen: 7/9
+  Gelesen: System='10RS / 10RS ('; Variante='STANDARD'; Rotor='11'; Huelse='17 / 16.4 Insert'; Linie='1'; Funktion='Standard / ABS'
+  Match-Key(s): [('10RS', 'STANDARD', '11', 'ze', '17', '1'), ('10RS', 'STANDARD', '11', 'ze', '16.4', '1')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-542_Abfuelluebersicht-KESO-K6000FP2-R12ze-H18.doc
+  HK/SE-Zeilen: 4/9
+  Gelesen: System='KESO K6000FP2'; Variante='FP2'; Rotor='12 zentrisch'; Huelse='18'; Linie='-'; Funktion='Standard'
+  Match-Key(s): [('6000', 'FP2', '12', 'ze', '18', '1'), ('6000', 'FP2', '12', 'ze', '18', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 153: 6000 FP2 | HK_12/20_ze_L1_W_83_D_2.7_CASA | Unterschiede: Huelse: Word=18 Excel=20
+    Excelzeile 154: 6000 FP2 | HK_12/22_ze_L1_W_83_D_2.7_CASA | Unterschiede: Huelse: Word=18 Excel=22
+    Excelzeile 156: 6000 FP2 | HK_12/29_ze_L1_W_83_D_2.7_CASA | Unterschiede: Huelse: Word=18 Excel=29
+    Excelzeile 152: 6000 FP2 | HK_11/17_ze_L1_W_83_D_1.8_CASA | Unterschiede: Rotor: Word=12 Excel=11; Huelse: Word=18 Excel=17
+    Excelzeile 155: 6000 FP2 | HK_12/29_ex_L1_W_83_D_2.7_CASA | Unterschiede: ze/ex: Word=ze Excel=ex; Huelse: Word=18 Excel=29
+
+Datei: 800-544_Abfuelluebersicht-KESO-K6000FP2-R12ex-H22.doc
+  HK/SE-Zeilen: 4/9
+  Gelesen: System='KESO K6000FP2'; Variante='FP2'; Rotor='12 exzentrisch'; Huelse='22'; Linie='-'; Funktion='Standard'
+  Match-Key(s): [('6000', 'FP2', '12', 'ex', '22', '1'), ('6000', 'FP2', '12', 'ex', '22', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 154: 6000 FP2 | HK_12/22_ze_L1_W_83_D_2.7_CASA | Unterschiede: ze/ex: Word=ex Excel=ze
+    Excelzeile 155: 6000 FP2 | HK_12/29_ex_L1_W_83_D_2.7_CASA | Unterschiede: Huelse: Word=22 Excel=29
+    Excelzeile 153: 6000 FP2 | HK_12/20_ze_L1_W_83_D_2.7_CASA | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=22 Excel=20
+    Excelzeile 156: 6000 FP2 | HK_12/29_ze_L1_W_83_D_2.7_CASA | Unterschiede: ze/ex: Word=ex Excel=ze; Huelse: Word=22 Excel=29
+
+Datei: 800-550_Abfuelluebersicht_K6000FP2_R12ze_H20_L2_Standard.doc
+  HK/SE-Zeilen: 4/9
+  Gelesen: System='K6000FP2'; Variante='FP2'; Rotor='12 zentrisch'; Huelse='20'; Linie='2'; Funktion='Standard'
+  Match-Key(s): [('6000', 'FP2', '12', 'ze', '20', '2')]
+  Nahe Excel-Kandidaten:
+    Excelzeile 153: 6000 FP2 | HK_12/20_ze_L1_W_83_D_2.7_CASA | Unterschiede: Linie: Word=2 Excel=1
+    Excelzeile 154: 6000 FP2 | HK_12/22_ze_L1_W_83_D_2.7_CASA | Unterschiede: Huelse: Word=20 Excel=22; Linie: Word=2 Excel=1
+    Excelzeile 156: 6000 FP2 | HK_12/29_ze_L1_W_83_D_2.7_CASA | Unterschiede: Huelse: Word=20 Excel=29; Linie: Word=2 Excel=1
+
+Datei: 800-628-001_Abfuelluebersicht_K8000_OM3_R12ze_H29_L1_Standard.doc
+  HK/SE-Zeilen: 4/10
+  Gelesen: System='K800\x000\x00©\x033'; Variante='OM3'; Rotor='12 ze'; Huelse='29'; Linie='1'; Funktion=None
+  Match-Key(s): [('800', 'OM3', '12', 'ze', '29', '1')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
+
+Datei: 800-630-001_Abfuelluebersicht_K8000_OM3_R12ex_H29_L1_Standard.doc
+  HK/SE-Zeilen: 4/10
+  Gelesen: System='K80\x000\x000\x00©\x033'; Variante='OM3'; Rotor='12 ex'; Huelse='29'; Linie='1'; Funktion=None
+  Match-Key(s): [('80', 'OM3', '12', 'ex', '29', '1')]
+  Nahe Excel-Kandidaten: keine mit gleichem System und mindestens 4/6 gleichen Match-Feldern
