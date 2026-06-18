@@ -1,10 +1,11 @@
 from __future__ import annotations
 
+import os
 import threading
 import tkinter as tk
 from tkinter import messagebox, ttk
 
-from bolzenreihenset_pruefung import DISPLAY_COLUMNS, clear_cache, get_display_rows
+from bolzenreihenset_pruefung import DISPLAY_COLUMNS, clear_cache, get_display_rows, write_99_percent_match
 
 
 EXAMPLE_ARTICLE = "HK_12/29_ze_L2_W_78_D_2.4_RHOM"
@@ -18,7 +19,7 @@ class BolzenreihensetApp(tk.Tk):
         self.minsize(1100, 620)
 
         self.article_var = tk.StringVar(value=EXAMPLE_ARTICLE)
-        self.status_var = tk.StringVar(value="Bereit. Es wird nichts in Excel geschrieben.")
+        self.status_var = tk.StringVar(value="Bereit.")
 
         self._configure_style()
         self._build_layout()
@@ -49,13 +50,16 @@ class BolzenreihensetApp(tk.Tk):
         self.reload_button = ttk.Button(control_frame, text="Daten neu laden", command=self.reload_data)
         self.reload_button.grid(row=3, column=0, sticky="ew", pady=(8, 0))
 
-        ttk.Separator(control_frame).grid(row=4, column=0, sticky="ew", pady=14)
+        self.write_button = ttk.Button(control_frame, text="99 %-Treffer schreiben", command=self.run_write)
+        self.write_button.grid(row=4, column=0, sticky="ew", pady=(8, 0))
+
+        ttk.Separator(control_frame).grid(row=5, column=0, sticky="ew", pady=14)
 
         guidance = (
             "Die Tabelle zeigt vorhandene und wahrscheinliche Treffer. "
             "Alles unter 100 % ist ein Pruefvorschlag."
         )
-        ttk.Label(control_frame, text=guidance, wraplength=310, justify="left").grid(row=5, column=0, sticky="w")
+        ttk.Label(control_frame, text=guidance, wraplength=310, justify="left").grid(row=6, column=0, sticky="w")
 
         result_frame = ttk.Frame(self, padding=(0, 12, 12, 12))
         result_frame.grid(row=0, column=1, sticky="nsew")
@@ -90,7 +94,8 @@ class BolzenreihensetApp(tk.Tk):
             "Wahrscheinlichkeit": 116,
             "Status": 140,
             "Code": 70,
-            "Hinweis": 560,
+            "Widerspruch": 300,
+            "Hinweis": 1100,
         }
         for column in DISPLAY_COLUMNS:
             self.tree.heading(column, text=column)
@@ -103,6 +108,7 @@ class BolzenreihensetApp(tk.Tk):
         state = "disabled" if busy else "normal"
         self.search_button.configure(state=state)
         self.reload_button.configure(state=state)
+        self.write_button.configure(state=state)
         if busy:
             self.status_var.set("Pruefung laeuft. Excel und Word-Daten werden nur gelesen...")
 
@@ -127,6 +133,23 @@ class BolzenreihensetApp(tk.Tk):
             return
 
         self.after(0, self._show_result, article_text, result)
+
+    def run_write(self) -> None:
+        article_text = self.article_var.get().strip()
+        self.set_busy(True)
+        self.status_var.set("99 %-Treffer wird geschrieben...")
+
+        thread = threading.Thread(target=self._write_worker, args=(article_text,), daemon=True)
+        thread.start()
+
+    def _write_worker(self, article_text: str) -> None:
+        try:
+            result = write_99_percent_match(article_text)
+        except Exception as exc:  # GUI boundary: show error instead of crashing Tk.
+            self.after(0, self._show_error, exc)
+            return
+
+        self.after(0, self._show_write_result, article_text, result)
 
     def _show_error(self, exc: Exception) -> None:
         self.set_busy(False)
@@ -158,6 +181,55 @@ class BolzenreihensetApp(tk.Tk):
             detail_lines.append("")
             detail_lines.append("Hinweis: 100 % bedeutet bestehender Excel-Eintrag. Alle niedrigeren Werte sind Pruefvorschlaege.")
         self.set_details("\n".join(detail_lines))
+        self.open_word_file_from_result(result, summary)
+
+    def _show_write_result(self, article_text: str, result: dict) -> None:
+        self.set_busy(False)
+
+        writes = result.get("writes", [])
+        messages = result.get("messages", [])
+        errors = result.get("errors", [])
+
+        lines = []
+        lines.extend(messages)
+        if writes:
+            if lines:
+                lines.append("")
+            lines.append("Geschrieben:")
+            for item in writes:
+                lines.append(f"{item['sheet']}!{item['cell']} = {item['value']}")
+        if errors:
+            if lines:
+                lines.append("")
+            lines.append("Nicht geschrieben / Hinweise:")
+            lines.extend(errors)
+
+        text = "\n".join(lines) if lines else "Nichts geschrieben."
+        if errors:
+            messagebox.showwarning("Schreiben abgeschlossen", text)
+        else:
+            messagebox.showinfo("Schreiben abgeschlossen", text)
+
+        self.status_var.set(f"{article_text}: Schreibvorgang abgeschlossen.")
+        self.run_search()
+
+    def open_word_file_from_result(self, result: dict, summary: str) -> None:
+        word_file = result.get("word_file_to_open")
+        if not word_file:
+            return
+
+        filename = word_file.get("filename")
+        path = word_file.get("path")
+        if not path:
+            return
+
+        try:
+            os.startfile(path)
+        except Exception as exc:
+            messagebox.showwarning("Word-Datei nicht geoeffnet", f"{filename or path}\n\n{exc}")
+            return
+
+        self.status_var.set(f"{summary} Word-Datei geoeffnet: {filename or path}")
 
     def clear_results(self) -> None:
         for item in self.tree.get_children():

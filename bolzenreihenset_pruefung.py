@@ -3,6 +3,7 @@ from __future__ import annotations
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from functools import lru_cache
+from pathlib import Path
 import re
 from typing import Any
 
@@ -25,6 +26,7 @@ UNKNOWN_FIELD_PENALTIES = {
     "Huelse": 7,
     "Linie": 5,
 }
+WORD_FILE_NOTE_PATTERN = re.compile(r"Word-Datei:\s*([^;\n]+?\.docx?)", flags=re.IGNORECASE)
 PAIR_COLUMNS = tuple(
     column
     for index in range(1, 6)
@@ -36,6 +38,7 @@ DISPLAY_COLUMNS = (
     "Status",
     "Code",
     *PAIR_COLUMNS,
+    "Widerspruch",
     "Hinweis",
 )
 
@@ -68,6 +71,7 @@ class Candidate:
     has_exact_system_match: bool = False
     word_files: set[str] = field(default_factory=set)
     codes: dict[str, list[tuple[str | None, str | None]]] = field(default_factory=lambda: defaultdict(list))
+    contradiction: str = ""
     details: list[str] = field(default_factory=list)
 
 
@@ -80,6 +84,10 @@ def clean_display(value: Any) -> str:
         return ""
 
     return str(value).strip()
+
+
+def resolve_project_path(path) -> Any:
+    return path if path.is_absolute() else Path(__file__).resolve().parent / path
 
 
 def limited_pairs(pairs: list[tuple[str | None, str | None]]) -> tuple[tuple[str | None, str | None], ...]:
@@ -140,10 +148,12 @@ def is_unknown_key_value(value: str) -> bool:
 def key_similarity(
     word_keys: tuple[tuple[str, str, str, str, str, str], ...],
     target_keys: tuple[tuple[str, str, str, str, str, str], ...],
-) -> tuple[int, tuple[str, ...], tuple[str, ...]]:
+) -> tuple[int, tuple[str, ...], tuple[str, ...], tuple[str, ...], tuple[str, ...]]:
     best_score = -1
     best_diff: tuple[str, ...] = tuple(KEY_LABELS)
     best_unknown: tuple[str, ...] = tuple(KEY_LABELS)
+    best_word_key: tuple[str, ...] = tuple(UNKNOWN_KEY_VALUE for _ in KEY_LABELS)
+    best_target_key: tuple[str, ...] = tuple(UNKNOWN_KEY_VALUE for _ in KEY_LABELS)
 
     for word_key in word_keys:
         for target_key in target_keys:
@@ -172,8 +182,28 @@ def key_similarity(
                 best_score = score
                 best_diff = diff_fields
                 best_unknown = unknown_fields
+                best_word_key = word_key
+                best_target_key = target_key
 
-    return max(best_score, 0), best_diff, best_unknown
+    return max(best_score, 0), best_diff, best_unknown, best_word_key, best_target_key
+
+
+def format_key_differences(
+    diff_fields: tuple[str, ...],
+    word_key: tuple[str, ...],
+    target_key: tuple[str, ...],
+) -> str:
+    if not diff_fields:
+        return ""
+
+    parts = []
+    for field in diff_fields:
+        index = KEY_LABELS.index(field)
+        word_value = word_key[index] or "-"
+        target_value = target_key[index] or "-"
+        parts.append(f"{field}: Word={word_value}, Excel={target_value}")
+
+    return "; ".join(parts)
 
 
 def extract_values_after_label(pattern: str, text: str) -> str | None:
@@ -276,12 +306,15 @@ class ReadOnlyRepository:
         self.article_records_by_normalized = self._index_article_records()
         self.calculation_rows_by_article, self.reverse_pair_index = self._load_calculation_rows()
         self.word_data = main.load_all_word_data()
+        self.word_filename_by_reference = self._index_word_filenames_by_reference()
+        self.reference_by_word_filename = self._index_references_by_word_filename()
         self.fill_tables_by_filename: dict[str, dict[str, list[dict[str, Any]]]] = {}
         self.word_key_cache: dict[str, tuple[tuple[str, str, str, str, str, str], ...]] = {}
 
         workbook = load_workbook(main.XLSX_FILE, read_only=True, data_only=True)
         try:
             self.drawing_lookup = main.load_drawing_lookup(workbook)
+            self.reference_by_excel_row = self._load_references_by_excel_row(workbook)
         finally:
             workbook.close()
 
@@ -307,6 +340,44 @@ class ReadOnlyRepository:
             )
 
         return records
+
+    def _index_word_filenames_by_reference(self) -> dict[str, str]:
+        return {
+            str(word_data["Referenz_zu_Abfullnorm"]).strip(): str(word_data["Datei"]).strip()
+            for word_data in self.word_data
+            if word_data.get("Referenz_zu_Abfullnorm") and word_data.get("Datei")
+        }
+
+    def _index_references_by_word_filename(self) -> dict[str, str]:
+        return {
+            str(word_data["Datei"]).strip(): str(word_data["Referenz_zu_Abfullnorm"]).strip()
+            for word_data in self.word_data
+            if word_data.get("Referenz_zu_Abfullnorm") and word_data.get("Datei")
+        }
+
+    def _load_references_by_excel_row(self, workbook) -> dict[int, str]:
+        sheet = workbook[main.ABFUELLNORM_SHEET_NAME]
+        references: dict[int, str] = {}
+
+        for row_number, (reference,) in enumerate(
+            sheet.iter_rows(min_row=2, min_col=3, max_col=3, values_only=True),
+            start=2,
+        ):
+            if reference is not None and str(reference).strip():
+                references[row_number] = str(reference).strip()
+
+        return references
+
+    def word_file_note_for_record(self, record: ArticleRecord) -> str:
+        reference = self.reference_by_excel_row.get(record.row_number)
+        if not reference:
+            return "Word-Datei: keine Referenz in Excel."
+
+        filename = self.word_filename_by_reference.get(reference)
+        if filename:
+            return f"Word-Datei: {filename}"
+
+        return f"Word-Datei: nicht gefunden fuer Referenz {reference}."
 
     def _index_article_records(self) -> dict[str, list[ArticleRecord]]:
         index: dict[str, list[ArticleRecord]] = defaultdict(list)
@@ -396,12 +467,14 @@ def make_display_row(
     code: str,
     pairs: tuple[tuple[str | None, str | None], ...],
     note: str,
+    contradiction: str = "",
 ) -> dict[str, str]:
     row = {
         "Kandidat": candidate,
         "Wahrscheinlichkeit": f"{probability} %",
         "Status": status,
         "Code": code,
+        "Widerspruch": contradiction,
         "Hinweis": note,
     }
 
@@ -412,7 +485,22 @@ def make_display_row(
     return row
 
 
-def display_rows_for_existing(record: ArticleRecord, rows: list[CalculationRow]) -> list[dict[str, str]]:
+def word_file_to_open_for_rows(rows: list[dict[str, str]]) -> dict[str, str] | None:
+    for row in rows:
+        note = row.get("Hinweis", "")
+        match = WORD_FILE_NOTE_PATTERN.search(note)
+        if not match:
+            continue
+
+        filename = match.group(1).strip()
+        path = resolve_project_path(main.DOCX_FOLDER / filename)
+        if path.exists():
+            return {"filename": filename, "path": str(path)}
+
+    return None
+
+
+def display_rows_for_existing(record: ArticleRecord, rows: list[CalculationRow], word_file_note: str) -> list[dict[str, str]]:
     display_rows = []
     for calculation_row in rows:
         if has_any_pair(calculation_row.pairs):
@@ -423,7 +511,7 @@ def display_rows_for_existing(record: ArticleRecord, rows: list[CalculationRow])
                     "Excel vorhanden",
                     calculation_row.code,
                     calculation_row.pairs,
-                    f"Berechnungscode-Zeile {calculation_row.row_number}; Bolzenpaar im Excel vorhanden.",
+                    f"Berechnungscode-Zeile {calculation_row.row_number}; Bolzenpaar im Excel vorhanden. {word_file_note}",
                 )
             )
             continue
@@ -434,7 +522,7 @@ def display_rows_for_existing(record: ArticleRecord, rows: list[CalculationRow])
             "nicht vorhanden",
             calculation_row.code,
             calculation_row.pairs,
-            f"Berechnungscode-Zeile {calculation_row.row_number}; im Excel steht fuer diesen Code kein Bolzen/Gegenbolzen-Paar.",
+            f"Berechnungscode-Zeile {calculation_row.row_number}; im Excel steht fuer diesen Code kein Bolzen/Gegenbolzen-Paar. {word_file_note}",
         )
         row["Wahrscheinlichkeit"] = "-"
         display_rows.append(row)
@@ -497,7 +585,9 @@ def probability_from_evidence(
     return max(35, min(99, probability))
 
 
-def status_from_probability(probability: int, top_is_tied: bool) -> str:
+def status_from_probability(probability: int, top_is_tied: bool, has_contradiction: bool = False) -> str:
+    if has_contradiction:
+        return "Widerspruch pruefen" if probability >= 60 else "unsicher"
     if probability >= 92 and not top_is_tied:
         return "sehr wahrscheinlich"
     if probability >= 78 and not top_is_tied:
@@ -584,7 +674,8 @@ def collect_word_candidates(repo: ReadOnlyRepository, record: ArticleRecord) -> 
             continue
         has_exact_system_match = production_system_exactly_matches(record, word_keys)
 
-        key_score, diff_fields, unknown_fields = key_similarity(word_keys, record.keys)
+        key_score, diff_fields, unknown_fields, word_key, target_key = key_similarity(word_keys, record.keys)
+        contradiction = format_key_differences(diff_fields, word_key, target_key)
         target_votes, total_pairs, is_top_article, top_is_tied, vote_counter = reverse_votes_for_word(
             repo,
             word_data,
@@ -609,7 +700,7 @@ def collect_word_candidates(repo: ReadOnlyRepository, record: ArticleRecord) -> 
             is_top_article,
             top_is_tied,
         )
-        status = status_from_probability(probability, top_is_tied)
+        status = status_from_probability(probability, top_is_tied, bool(diff_fields))
 
         note_parts = [
             f"Word-Datei: {word_filename}",
@@ -636,6 +727,7 @@ def collect_word_candidates(repo: ReadOnlyRepository, record: ArticleRecord) -> 
             note="; ".join(note_parts),
             has_exact_system_match=has_exact_system_match,
             word_files={word_filename},
+            contradiction=contradiction,
         )
         candidate.codes = rows_by_code
         candidate.details = [f"Artikelpaar-Stimmen: {dict(vote_counter)}"] if vote_counter else []
@@ -677,10 +769,190 @@ def display_rows_for_candidates(
                     code,
                     visible_pairs,
                     candidate.note,
+                    candidate.contradiction,
                 )
             )
 
     return rows, skipped_codes
+
+
+def candidate_word_filename(candidate: Candidate) -> str | None:
+    return next(iter(candidate.word_files), None)
+
+
+def write_99_percent_match(article_text: str) -> dict[str, Any]:
+    repo = repository()
+    normalized = normalized_article(article_text)
+    records = repo.article_records_by_normalized.get(normalized, [])
+    writes: list[dict[str, str]] = []
+    messages: list[str] = []
+    errors: list[str] = []
+
+    if not article_text.strip():
+        return {"writes": writes, "messages": ["Bitte ein Bolzenreihenset eingeben."], "errors": errors}
+
+    if not records:
+        return {
+            "writes": writes,
+            "messages": [f"Bolzenreihenset nicht exakt im Excel gefunden: {article_text}"],
+            "errors": errors,
+        }
+
+    record_candidates: list[tuple[ArticleRecord, Candidate, str, str]] = []
+    for record in records:
+        candidates = [
+            candidate
+            for candidate in collect_word_candidates(repo, record)
+            if candidate.probability >= 99 and not candidate.contradiction
+        ]
+        for candidate in candidates:
+            filename = candidate_word_filename(candidate)
+            if not filename:
+                continue
+            reference = repo.reference_by_word_filename.get(filename)
+            if not reference:
+                errors.append(f"{record.article}: keine Referenz zur Word-Datei {filename} gefunden.")
+                continue
+            record_candidates.append((record, candidate, filename, reference))
+
+    if not record_candidates:
+        return {
+            "writes": writes,
+            "messages": ["Kein widerspruchsfreier 99 %-Treffer zum Schreiben gefunden."],
+            "errors": errors,
+        }
+
+    filenames = {filename for _record, _candidate, filename, _reference in record_candidates}
+    if len(filenames) > 1:
+        errors.append("Mehrere 99 %-Word-Dateien gefunden: " + ", ".join(sorted(filenames)))
+        return {"writes": writes, "messages": messages, "errors": errors}
+
+    workbook = load_workbook(main.XLSX_FILE)
+    try:
+        abfuellnorm_sheet = workbook[main.ABFUELLNORM_SHEET_NAME]
+        calc_sheet = workbook[main.CALC_SHEET_NAME]
+        calc_rows = main.calculation_rows_by_article_and_code(calc_sheet)
+        systems_by_article = main.production_systems_by_bolzenreihenset(repo.bolzenreihenset_pairs)
+        report_items: list[dict[str, Any]] = []
+        pair_writes: list[dict[str, Any]] = []
+
+        for record, candidate, filename, reference in record_candidates:
+            reference_cell = abfuellnorm_sheet[f"C{record.row_number}"]
+            current_reference = None if reference_cell.value is None else str(reference_cell.value).strip()
+            if current_reference in {None, ""}:
+                reference_cell.value = reference
+                writes.append(
+                    {
+                        "sheet": main.ABFUELLNORM_SHEET_NAME,
+                        "cell": reference_cell.coordinate,
+                        "value": reference,
+                    }
+                )
+            elif current_reference != reference:
+                errors.append(
+                    f"{main.ABFUELLNORM_SHEET_NAME}!{reference_cell.coordinate} enthaelt {current_reference}, "
+                    f"nicht {reference}."
+                )
+
+            production_system = main.production_system_from_description(record.description)
+            for code, pairs in sorted(candidate.codes.items(), key=lambda item: item[0]):
+                calculation_row_numbers, system_error = main.find_calculation_rows(
+                    calc_rows,
+                    record.article,
+                    code,
+                    production_system,
+                    systems_by_article,
+                )
+                if system_error:
+                    errors.append(f"{record.article} Code {code}: {system_error}")
+                    continue
+
+                if not calculation_row_numbers:
+                    calculation_row_number = main.append_calculation_code_row(
+                        calc_sheet,
+                        calc_rows,
+                        record.article,
+                        code,
+                    )
+                    writes.extend(
+                        [
+                            {
+                                "sheet": main.CALC_SHEET_NAME,
+                                "cell": f"A{calculation_row_number}",
+                                "value": calc_sheet[f"A{calculation_row_number}"].value,
+                            },
+                            {
+                                "sheet": main.CALC_SHEET_NAME,
+                                "cell": f"B{calculation_row_number}",
+                                "value": record.article,
+                            },
+                            {
+                                "sheet": main.CALC_SHEET_NAME,
+                                "cell": f"C{calculation_row_number}",
+                                "value": code,
+                            },
+                        ]
+                    )
+                elif len(calculation_row_numbers) != 1:
+                    errors.append(
+                        f"{record.article} Code {code}: Berechnungscode-Zeile nicht eindeutig "
+                        f"({calculation_row_numbers})."
+                    )
+                    continue
+                else:
+                    calculation_row_number = calculation_row_numbers[0]
+
+                context = {
+                    "Referenz_zu_Abfullnorm": reference,
+                    "Word_Datei": filename,
+                    "Excel_Artikel": record.article,
+                    "Produktionssystem": production_system,
+                    "Tabelle": record.prefix,
+                    "Code": code,
+                    "Berechnungscode_Zeile": calculation_row_number,
+                }
+                for bolzen_article, gegenbolzen_article in limited_pairs(list(pairs)):
+                    main.write_pair_to_next_available_slot(
+                        calc_sheet,
+                        calculation_row_number,
+                        bolzen_article,
+                        gegenbolzen_article,
+                        context,
+                        pair_writes,
+                        report_items,
+                    )
+
+        for item in pair_writes:
+            writes.extend(
+                [
+                    {
+                        "sheet": main.CALC_SHEET_NAME,
+                        "cell": item["Bolzen_Zelle"],
+                        "value": item["Bolzen_Artikel"],
+                    },
+                    {
+                        "sheet": main.CALC_SHEET_NAME,
+                        "cell": item["Gegenbolzen_Zelle"],
+                        "value": item["Gegenbolzen_Artikel"],
+                    },
+                ]
+            )
+
+        for item in report_items:
+            errors.append(
+                f"{item.get('Excel_Artikel')} Code {item.get('Code')}: {item.get('Grund')}"
+            )
+
+        if writes:
+            workbook.save(main.XLSX_FILE)
+            messages.append(f"{len(writes)} Zellen geschrieben.")
+            clear_cache()
+        else:
+            messages.append("Nichts geschrieben; alle passenden Werte waren bereits vorhanden.")
+    finally:
+        workbook.close()
+
+    return {"writes": writes, "messages": messages, "errors": errors}
 
 
 def get_display_rows(article_text: str) -> dict[str, Any]:
@@ -719,7 +991,8 @@ def get_display_rows(article_text: str) -> dict[str, Any]:
             for calculation_row in existing_rows
             if has_any_pair(calculation_row.pairs)
         }
-        display_rows.extend(display_rows_for_existing(record, existing_rows))
+        word_file_note = repo.word_file_note_for_record(record)
+        display_rows.extend(display_rows_for_existing(record, existing_rows, word_file_note))
 
         candidates = collect_word_candidates(repo, record)
         candidate_rows, skipped_codes = display_rows_for_candidates(candidates, excluded_codes=existing_codes_with_pairs)
@@ -748,6 +1021,7 @@ def get_display_rows(article_text: str) -> dict[str, Any]:
         "rows": display_rows,
         "messages": messages,
         "details": details,
+        "word_file_to_open": word_file_to_open_for_rows(display_rows),
     }
 
 

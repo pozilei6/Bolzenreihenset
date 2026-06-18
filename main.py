@@ -356,6 +356,11 @@ def normalize_diameters(value, field_name):
 	return list(dict.fromkeys(match.replace(",", ".") for match in matches))
 
 
+def unknown_match_value(value):
+	text = normalize_text(value)
+	return text in {None, "", "-"}
+
+
 def parse_rotor_diameter_and_type(value):
 	text = normalize_text(value)
 	if not text:
@@ -457,7 +462,11 @@ def parse_word_match_keys(word_data):
 
 		system = normalize_system(word_system_value(word_data))
 		lines = ["1", "2"]
-	hulse_diameters = normalize_diameters(word_hulse_value(word_data), "Hulsen-diam")
+	hulse_value = word_hulse_value(word_data)
+	if unknown_match_value(hulse_value):
+		hulse_diameters = [""]
+	else:
+		hulse_diameters = normalize_diameters(hulse_value, "Hulsen-diam")
 
 	return [
 		(
@@ -536,13 +545,22 @@ def find_matching_excel_rows_by_key(word_key, bolzenreihenset_pairs, include_se_
 
 
 def find_matching_excel_rows_by_keys(word_keys, bolzenreihenset_pairs, include_se_matches=True):
-	word_key_set = set(word_keys)
-
 	return [
 		row_number
 		for row_number, pair in bolzenreihenset_pairs.items()
-		if word_key_set.intersection(parse_excel_match_keys(pair, include_se_matches))
+		if any(
+			word_key_matches_excel_key(word_key, excel_key)
+			for word_key in word_keys
+			for excel_key in parse_excel_match_keys(pair, include_se_matches)
+		)
 	]
+
+
+def word_key_matches_excel_key(word_key, excel_key):
+	return all(
+		word_value in {None, ""} or word_value == excel_value
+		for word_value, excel_value in zip(word_key, excel_key)
+	)
 
 
 def build_unmatched_item(word_data, reason, search_key=None, matching_rows=None, error=None):
