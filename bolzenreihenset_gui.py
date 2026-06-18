@@ -20,6 +20,8 @@ class BolzenreihensetApp(tk.Tk):
 
         self.article_var = tk.StringVar(value=EXAMPLE_ARTICLE)
         self.status_var = tk.StringVar(value="Bereit.")
+        self.is_busy = False
+        self.has_writeable_99_matches = False
 
         self._configure_style()
         self._build_layout()
@@ -52,6 +54,7 @@ class BolzenreihensetApp(tk.Tk):
 
         self.write_button = ttk.Button(control_frame, text="99 %-Treffer schreiben", command=self.run_write)
         self.write_button.grid(row=4, column=0, sticky="ew", pady=(8, 0))
+        self.update_write_button_state()
 
         ttk.Separator(control_frame).grid(row=5, column=0, sticky="ew", pady=14)
 
@@ -105,15 +108,28 @@ class BolzenreihensetApp(tk.Tk):
             self.tree.column(column, width=width, minwidth=70, anchor=anchor, stretch=stretch)
 
     def set_busy(self, busy: bool) -> None:
+        self.is_busy = busy
         state = "disabled" if busy else "normal"
         self.search_button.configure(state=state)
         self.reload_button.configure(state=state)
-        self.write_button.configure(state=state)
+        self.update_write_button_state()
         if busy:
             self.status_var.set("Pruefung laeuft. Excel und Word-Daten werden nur gelesen...")
 
+    def set_write_button_available(self, available: bool) -> None:
+        self.has_writeable_99_matches = available
+        self.update_write_button_state()
+
+    def update_write_button_state(self) -> None:
+        if not hasattr(self, "write_button"):
+            return
+
+        state = "normal" if self.has_writeable_99_matches and not self.is_busy else "disabled"
+        self.write_button.configure(state=state)
+
     def reload_data(self) -> None:
         clear_cache()
+        self.set_write_button_available(False)
         self.status_var.set("Cache geleert. Die naechste Pruefung liest Excel/Word neu ein.")
         self.clear_results()
 
@@ -135,6 +151,10 @@ class BolzenreihensetApp(tk.Tk):
         self.after(0, self._show_result, article_text, result)
 
     def run_write(self) -> None:
+        if not self.has_writeable_99_matches:
+            self.status_var.set("Kein schreibbarer 99 %-Treffer fuer den aktuellen Suchstand.")
+            return
+
         article_text = self.article_var.get().strip()
         self.set_busy(True)
         self.status_var.set("99 %-Treffer wird geschrieben...")
@@ -152,12 +172,12 @@ class BolzenreihensetApp(tk.Tk):
         self.after(0, self._show_write_result, article_text, result)
 
     def _show_error(self, exc: Exception) -> None:
+        self.set_write_button_available(False)
         self.set_busy(False)
         self.status_var.set("Fehler bei der Pruefung.")
         messagebox.showerror("Fehler", str(exc))
 
     def _show_result(self, article_text: str, result: dict) -> None:
-        self.set_busy(False)
         self.clear_results()
 
         rows = result.get("rows", [])
@@ -181,9 +201,12 @@ class BolzenreihensetApp(tk.Tk):
             detail_lines.append("")
             detail_lines.append("Hinweis: 100 % bedeutet bestehender Excel-Eintrag. Alle niedrigeren Werte sind Pruefvorschlaege.")
         self.set_details("\n".join(detail_lines))
+        self.set_write_button_available(bool(result.get("has_writeable_99_matches")))
+        self.set_busy(False)
         self.open_word_file_from_result(result, summary)
 
     def _show_write_result(self, article_text: str, result: dict) -> None:
+        self.set_write_button_available(False)
         self.set_busy(False)
 
         writes = result.get("writes", [])
@@ -232,6 +255,7 @@ class BolzenreihensetApp(tk.Tk):
         self.status_var.set(f"{summary} Word-Datei geoeffnet: {filename or path}")
 
     def clear_results(self) -> None:
+        self.set_write_button_available(False)
         for item in self.tree.get_children():
             self.tree.delete(item)
         self.set_details("")

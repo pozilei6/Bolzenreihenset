@@ -776,8 +776,97 @@ def display_rows_for_candidates(
     return rows, skipped_codes
 
 
+def candidate_word_file_detail_lines(
+    record: ArticleRecord,
+    candidates: list[Candidate],
+    max_files: int = 10,
+) -> list[str]:
+    filenames = sorted(
+        {
+            filename
+            for candidate in candidates
+            for filename in candidate.word_files
+            if filename
+        }
+    )
+    if not filenames:
+        return []
+
+    visible_filenames = filenames[:max_files]
+    lines = [
+        f"{record.article}: Gefundene Word-Dateien aus Kandidatenlogik "
+        "(nur Anzeige, nicht automatisch gewaehlt):"
+    ]
+    lines.extend(f"- {filename}" for filename in visible_filenames)
+
+    remaining_count = len(filenames) - len(visible_filenames)
+    if remaining_count:
+        lines.append(f"... {remaining_count} weitere")
+
+    return lines
+
+
 def candidate_word_filename(candidate: Candidate) -> str | None:
     return next(iter(candidate.word_files), None)
+
+
+def writeable_99_match_for_candidate(
+    repo: ReadOnlyRepository,
+    record: ArticleRecord,
+    candidate: Candidate,
+) -> tuple[ArticleRecord, Candidate, str, str] | None:
+    if candidate.probability < 99 or candidate.contradiction:
+        return None
+
+    filename = candidate_word_filename(candidate)
+    if not filename:
+        return None
+
+    reference = repo.reference_by_word_filename.get(filename)
+    if not reference:
+        return None
+
+    return record, candidate, filename, reference
+
+
+def collect_writeable_99_matches(
+    repo: ReadOnlyRepository,
+    records: list[ArticleRecord],
+) -> tuple[list[tuple[ArticleRecord, Candidate, str, str]], list[str]]:
+    record_candidates: list[tuple[ArticleRecord, Candidate, str, str]] = []
+    errors: list[str] = []
+
+    for record in records:
+        for candidate in collect_word_candidates(repo, record):
+            match = writeable_99_match_for_candidate(repo, record, candidate)
+            if match:
+                record_candidates.append(match)
+                continue
+
+            if candidate.probability >= 99 and not candidate.contradiction:
+                filename = candidate_word_filename(candidate)
+                if filename and not repo.reference_by_word_filename.get(filename):
+                    errors.append(f"{record.article}: keine Referenz zur Word-Datei {filename} gefunden.")
+
+    return record_candidates, errors
+
+
+def has_single_writeable_99_word_file(record_candidates: list[tuple[ArticleRecord, Candidate, str, str]]) -> bool:
+    return len({filename for _record, _candidate, filename, _reference in record_candidates}) == 1
+
+
+def existing_reference_covers_base_reference(existing_reference: str, reference: str) -> bool:
+    base_match = re.fullmatch(r"(800\.\d{3}\.\d{3})", reference, flags=re.IGNORECASE)
+    if not base_match:
+        return False
+
+    return bool(
+        re.fullmatch(
+            rf"{re.escape(base_match.group(1))}\.[A-Za-z]",
+            existing_reference,
+            flags=re.IGNORECASE,
+        )
+    )
 
 
 def write_99_percent_match(article_text: str) -> dict[str, Any]:
@@ -798,22 +887,8 @@ def write_99_percent_match(article_text: str) -> dict[str, Any]:
             "errors": errors,
         }
 
-    record_candidates: list[tuple[ArticleRecord, Candidate, str, str]] = []
-    for record in records:
-        candidates = [
-            candidate
-            for candidate in collect_word_candidates(repo, record)
-            if candidate.probability >= 99 and not candidate.contradiction
-        ]
-        for candidate in candidates:
-            filename = candidate_word_filename(candidate)
-            if not filename:
-                continue
-            reference = repo.reference_by_word_filename.get(filename)
-            if not reference:
-                errors.append(f"{record.article}: keine Referenz zur Word-Datei {filename} gefunden.")
-                continue
-            record_candidates.append((record, candidate, filename, reference))
+    record_candidates, reference_errors = collect_writeable_99_matches(repo, records)
+    errors.extend(reference_errors)
 
     if not record_candidates:
         return {
@@ -848,7 +923,7 @@ def write_99_percent_match(article_text: str) -> dict[str, Any]:
                         "value": reference,
                     }
                 )
-            elif current_reference != reference:
+            elif current_reference != reference and not existing_reference_covers_base_reference(current_reference, reference):
                 errors.append(
                     f"{main.ABFUELLNORM_SHEET_NAME}!{reference_cell.coordinate} enthaelt {current_reference}, "
                     f"nicht {reference}."
@@ -966,6 +1041,7 @@ def get_display_rows(article_text: str) -> dict[str, Any]:
             "rows": [],
             "messages": ["Bitte ein Bolzenreihenset eingeben."],
             "details": [],
+            "has_writeable_99_matches": False,
         }
 
     if not records:
@@ -974,11 +1050,13 @@ def get_display_rows(article_text: str) -> dict[str, Any]:
             "rows": [],
             "messages": [f"Bolzenreihenset nicht exakt im Excel gefunden: {article_text}"],
             "details": ["Es wird nichts geschrieben. Bitte Schreibweise in Spalte B pruefen."],
+            "has_writeable_99_matches": False,
         }
 
     display_rows: list[dict[str, str]] = []
     messages: list[str] = []
     details: list[str] = []
+    writeable_99_matches: list[tuple[ArticleRecord, Candidate, str, str]] = []
 
     for record in records:
         messages.append(
@@ -995,6 +1073,11 @@ def get_display_rows(article_text: str) -> dict[str, Any]:
         display_rows.extend(display_rows_for_existing(record, existing_rows, word_file_note))
 
         candidates = collect_word_candidates(repo, record)
+        writeable_99_matches.extend(
+            match
+            for candidate in candidates
+            if (match := writeable_99_match_for_candidate(repo, record, candidate))
+        )
         candidate_rows, skipped_codes = display_rows_for_candidates(candidates, excluded_codes=existing_codes_with_pairs)
         display_rows.extend(candidate_rows)
 
@@ -1008,6 +1091,7 @@ def get_display_rows(article_text: str) -> dict[str, Any]:
             )
         if candidates:
             details.append(f"{record.article}: {len(candidates)} wahrscheinliche Word-Kandidaten gefunden.")
+            details.extend(candidate_word_file_detail_lines(record, candidates))
         if skipped_codes:
             details.append(
                 f"{record.article}: Word-Vorschlaege fuer bereits belegte Excel-Codes ausgeblendet: {', '.join(sorted(skipped_codes))}."
@@ -1022,6 +1106,7 @@ def get_display_rows(article_text: str) -> dict[str, Any]:
         "messages": messages,
         "details": details,
         "word_file_to_open": word_file_to_open_for_rows(display_rows),
+        "has_writeable_99_matches": has_single_writeable_99_word_file(writeable_99_matches),
     }
 
 

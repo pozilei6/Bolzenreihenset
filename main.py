@@ -73,6 +73,22 @@ def reference_after_funktion(text):
 	return reference.group(0) if reference else None
 
 
+def reference_from_filename(filename):
+	match = re.match(r"^(800)-(\d{3})-(\d{3})(?=[_\-.\s]|$)", filename, flags=re.IGNORECASE)
+	if not match:
+		return None
+
+	return ".".join(match.groups())
+
+
+def word_reference_value(text, path):
+	reference = reference_after_funktion(text)
+	if reference or path.suffix.lower() != ".doc":
+		return reference
+
+	return reference_from_filename(path.name)
+
+
 def line_from_filename(filename):
 	match = re.search(r"(?:^|[_\-\s])L([0-9])(?:[_\-.\s]|$)", filename, flags=re.IGNORECASE)
 	return match.group(1) if match else None
@@ -212,7 +228,7 @@ def parse_word_file(path):
 		"Linie": line,
 		"Linie_Quelle": line_source,
 		"Funktion": function,
-		"Referenz_zu_Abfullnorm": reference_after_funktion(text),
+		"Referenz_zu_Abfullnorm": word_reference_value(text, path),
 	}
 
 
