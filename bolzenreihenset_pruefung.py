@@ -485,6 +485,17 @@ def make_display_row(
     return row
 
 
+def word_file_open_payload(filename: str | None) -> dict[str, str] | None:
+    if not filename:
+        return None
+
+    path = resolve_project_path(main.DOCX_FOLDER / filename)
+    if path.exists():
+        return {"filename": filename, "path": str(path)}
+
+    return None
+
+
 def word_file_to_open_for_rows(rows: list[dict[str, str]]) -> dict[str, str] | None:
     for row in rows:
         note = row.get("Hinweis", "")
@@ -493,17 +504,85 @@ def word_file_to_open_for_rows(rows: list[dict[str, str]]) -> dict[str, str] | N
             continue
 
         filename = match.group(1).strip()
-        path = resolve_project_path(main.DOCX_FOLDER / filename)
-        if path.exists():
-            return {"filename": filename, "path": str(path)}
+        payload = word_file_open_payload(filename)
+        if payload:
+            return payload
 
     return None
 
 
-def display_rows_for_existing(record: ArticleRecord, rows: list[CalculationRow], word_file_note: str) -> list[dict[str, str]]:
+def word_filename_from_record_reference(repo: ReadOnlyRepository, record: ArticleRecord) -> str | None:
+    reference = repo.reference_by_excel_row.get(record.row_number)
+    if not reference:
+        return None
+
+    return repo.word_filename_by_reference.get(reference)
+
+
+def best_word_file_from_candidates(candidates: list[Candidate]) -> tuple[str, int] | None:
+    scored_files = {
+        (filename, candidate.probability)
+        for candidate in candidates
+        for filename in candidate.word_files
+        if filename
+    }
+    if not scored_files:
+        return None
+
+    return sorted(scored_files, key=lambda item: (-item[1], item[0]))[0]
+
+
+def best_word_file_from_scored_files(scored_files: list[tuple[str, int]]) -> tuple[str, int] | None:
+    if not scored_files:
+        return None
+
+    return sorted(set(scored_files), key=lambda item: (-item[1], item[0]))[0]
+
+
+def append_best_match_note(note: str, best_candidate_file: tuple[str, int] | None) -> str:
+    if not best_candidate_file:
+        return note
+
+    filename, probability = best_candidate_file
+    if filename in note:
+        return note
+
+    return f"{note}; Best Match ({probability} %): {filename}"
+
+
+def word_file_to_open_for_result(
+    repo: ReadOnlyRepository,
+    records: list[ArticleRecord],
+    best_candidate_files: list[tuple[str, int]],
+    rows: list[dict[str, str]],
+) -> dict[str, str] | None:
+    for record in records:
+        payload = word_file_open_payload(word_filename_from_record_reference(repo, record))
+        if payload:
+            return payload
+
+    best_candidate_file = best_word_file_from_scored_files(best_candidate_files)
+    if best_candidate_file:
+        payload = word_file_open_payload(best_candidate_file[0])
+        if payload:
+            return payload
+
+    return word_file_to_open_for_rows(rows)
+
+
+def display_rows_for_existing(
+    record: ArticleRecord,
+    rows: list[CalculationRow],
+    word_file_note: str,
+    best_candidate_file: tuple[str, int] | None = None,
+) -> list[dict[str, str]]:
     display_rows = []
     for calculation_row in rows:
         if has_any_pair(calculation_row.pairs):
+            note = (
+                f"Berechnungscode-Zeile {calculation_row.row_number}; "
+                f"Bolzenpaar im Excel vorhanden. {word_file_note}"
+            )
             display_rows.append(
                 make_display_row(
                     record.article,
@@ -511,7 +590,7 @@ def display_rows_for_existing(record: ArticleRecord, rows: list[CalculationRow],
                     "Excel vorhanden",
                     calculation_row.code,
                     calculation_row.pairs,
-                    f"Berechnungscode-Zeile {calculation_row.row_number}; Bolzenpaar im Excel vorhanden. {word_file_note}",
+                    append_best_match_note(note, best_candidate_file),
                 )
             )
             continue
@@ -1057,11 +1136,17 @@ def get_display_rows(article_text: str) -> dict[str, Any]:
     messages: list[str] = []
     details: list[str] = []
     writeable_99_matches: list[tuple[ArticleRecord, Candidate, str, str]] = []
+    best_candidate_files: list[tuple[str, int]] = []
 
     for record in records:
         messages.append(
             f"Treffer: Excelzeile {record.row_number}, {record.description or 'ohne Beschreibung'}"
         )
+
+        candidates = collect_word_candidates(repo, record)
+        best_candidate_file = best_word_file_from_candidates(candidates)
+        if best_candidate_file:
+            best_candidate_files.append(best_candidate_file)
 
         existing_rows = repo.calculation_rows_by_article.get(normalized_article(record.article), [])
         existing_codes_with_pairs = {
@@ -1070,9 +1155,15 @@ def get_display_rows(article_text: str) -> dict[str, Any]:
             if has_any_pair(calculation_row.pairs)
         }
         word_file_note = repo.word_file_note_for_record(record)
-        display_rows.extend(display_rows_for_existing(record, existing_rows, word_file_note))
+        display_rows.extend(
+            display_rows_for_existing(
+                record,
+                existing_rows,
+                word_file_note,
+                best_candidate_file,
+            )
+        )
 
-        candidates = collect_word_candidates(repo, record)
         writeable_99_matches.extend(
             match
             for candidate in candidates
@@ -1105,7 +1196,7 @@ def get_display_rows(article_text: str) -> dict[str, Any]:
         "rows": display_rows,
         "messages": messages,
         "details": details,
-        "word_file_to_open": word_file_to_open_for_rows(display_rows),
+        "word_file_to_open": word_file_to_open_for_result(repo, records, best_candidate_files, display_rows),
         "has_writeable_99_matches": has_single_writeable_99_word_file(writeable_99_matches),
     }
 
